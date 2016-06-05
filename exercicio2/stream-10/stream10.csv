@@ -1,0 +1,8 @@
+"Scope","CPUTIME (usec).[0,0] (I)","CPUTIME (usec).[0,0] (E)"
+"Experiment Aggregate Metrics",1.05e+06 100 %,1.05e+06 100 %
+"<program root>",1.05e+06 100 %,
+"main",1.05e+06 100 %,1.00e+06 95.5%
+"loop at stream.c: 288",2.39e+04  2.3%,2.39e+04  2.3%
+"loop at stream.c: 269",4.46e+04  4.2%,4.46e+04  4.2%
+"checkSTREAMresults",4.77e+04  4.5%,4.77e+04  4.5%
+"loop at stream.c: 308",9.35e+05 88.9%,

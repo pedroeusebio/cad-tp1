@@ -63,8 +63,8 @@
 	v CDATA #IMPLIED>
 ]>
 <HPCToolkitStructure i="0" version="4.6" n="">
-<LM i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/exercicio2/stream-20000000/stream20000000" v="{}">
-  <F i="16" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+<LM i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-20000000/stream20000000" v="{}">
+  <F i="16" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
     <P i="17" n="main" l="209-380" v="{[0x4005cd-0x400e87)}">
       <S i="101" l="210" v="{[0x4005cd-0x4005d8)}"/>
       <S i="104" l="220" v="{[0x4005d8-0x4005e2)}"/>
@@ -81,7 +81,7 @@
       <S i="145" l="243" v="{[0x4006c0-0x4006d4)}"/>
       <S i="149" l="244" v="{[0x4006d4-0x4006de)}"/>
       <S i="151" l="245" v="{[0x4006de-0x4006e8)}"/>
-      <L i="232" l="269" v="{[0x400743-0x400744)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="232" l="269" v="{[0x400743-0x400744)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="242" l="269" v="{[0x4006e8-0x4006f5) [0x40073b-0x400750)}"/>
         <S i="233" l="270" v="{[0x4006f5-0x40070e)}"/>
         <S i="236" l="271" v="{[0x40070e-0x400727)}"/>
@@ -93,7 +93,7 @@
       <S i="168" l="281" v="{[0x40078c-0x400796)}"/>
       <S i="170" l="283" v="{[0x400796-0x4007a0)}"/>
       <S i="171" l="286" v="{[0x4007a0-0x4007c0)}"/>
-      <L i="245" l="288" v="{[0x4007f9-0x4007fa)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="245" l="288" v="{[0x4007f9-0x4007fa)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="251" l="288" v="{[0x4007c0-0x4007cd) [0x4007f1-0x400806)}"/>
         <S i="246" l="289" v="{[0x4007cd-0x4007f1)}"/>
       </L>
@@ -108,36 +108,36 @@
       <S i="209" l="302" v="{[0x4008a8-0x4008b2)}"/>
       <S i="211" l="303" v="{[0x4008b2-0x4008bc)}"/>
       <S i="213" l="307" v="{[0x4008bc-0x4008cd)}"/>
-      <L i="254" l="308" v="{[0x400bad-0x400bae)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="254" l="308" v="{[0x400bad-0x400bae)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="336" l="308" v="{[0x4008cd-0x4008dc) [0x400ba6-0x400bba)}"/>
         <S i="255" l="310" v="{[0x4008dc-0x400906)}"/>
-        <L i="339" l="315" v="{[0x400939-0x40093a)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="339" l="315" v="{[0x400939-0x40093a)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="344" l="315" v="{[0x400906-0x400913) [0x400931-0x400946)}"/>
           <S i="340" l="316" v="{[0x400913-0x400931)}"/>
         </L>
         <S i="264" l="318" v="{[0x400946-0x400976)}"/>
         <S i="273" l="320" v="{[0x400976-0x4009a4)}"/>
-        <L i="347" l="325" v="{[0x4009e1-0x4009e2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="347" l="325" v="{[0x4009e1-0x4009e2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="353" l="325" v="{[0x4009a4-0x4009b1) [0x4009d9-0x4009ee)}"/>
           <S i="348" l="326" v="{[0x4009b1-0x4009d9)}"/>
         </L>
         <S i="283" l="328" v="{[0x4009ee-0x400a26)}"/>
         <S i="294" l="330" v="{[0x400a26-0x400a54)}"/>
-        <L i="356" l="335" v="{[0x400a9d-0x400a9e)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="356" l="335" v="{[0x400a9d-0x400a9e)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="364" l="335" v="{[0x400a54-0x400a61) [0x400a95-0x400aaa)}"/>
           <S i="357" l="336" v="{[0x400a61-0x400a95)}"/>
         </L>
         <S i="304" l="338" v="{[0x400aaa-0x400ae2)}"/>
         <S i="315" l="340" v="{[0x400ae2-0x400b10)}"/>
-        <L i="367" l="345" v="{[0x400b61-0x400b62)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="367" l="345" v="{[0x400b61-0x400b62)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="376" l="345" v="{[0x400b10-0x400b1d) [0x400b59-0x400b6e)}"/>
           <S i="368" l="346" v="{[0x400b1d-0x400b59)}"/>
         </L>
         <S i="325" l="348" v="{[0x400b6e-0x400ba6)}"/>
       </L>
-      <L i="379" l="353" v="{[0x400d51-0x400d52)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="379" l="353" v="{[0x400d51-0x400d52)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="382" l="353" v="{[0x400bba-0x400bc9) [0x400d4a-0x400d5e)}"/>
-        <L i="385" l="355" v="{[0x400d3c-0x400d3d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="385" l="355" v="{[0x400d3c-0x400d3d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="454" l="355" v="{[0x400bc9-0x400bd9) [0x400d34-0x400d4a)}"/>
           <S i="386" l="357" v="{[0x400bd9-0x400c26)}"/>
           <S i="400" l="358" v="{[0x400c26-0x400cad)}"/>
@@ -145,7 +145,7 @@
         </L>
       </L>
       <S i="219" l="363" v="{[0x400d5e-0x400d68)}"/>
-      <L i="457" l="364" v="{[0x400e54-0x400e55)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="457" l="364" v="{[0x400e54-0x400e55)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="488" l="364" v="{[0x400d68-0x400d78) [0x400e4c-0x400e62)}"/>
         <S i="458" l="365" v="{[0x400d78-0x400da4)}"/>
         <S i="464" l="367" v="{[0x400da4-0x400dd1) [0x400dfd-0x400e4c)}"/>
@@ -159,16 +159,16 @@
     </P>
     <P i="18" n="checktick" l="385-412" v="{[0x400e87-0x400fcc)}">
       <S i="491" l="386" v="{[0x400e87-0x400e92)}"/>
-      <L i="502" l="392" v="{[0x400f2c-0x400f2d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="502" l="392" v="{[0x400f2c-0x400f2d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="514" l="392" v="{[0x400e92-0x400ea1) [0x400f25-0x400f39)}"/>
         <S i="503" l="393" v="{[0x400ea1-0x400ec1)}"/>
-        <L i="517" l="394" v="{[0x400ec1-0x400ec2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+        <L i="517" l="394" v="{[0x400ec1-0x400ec2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
           <S i="518" l="394" v="{[0x400ec1-0x400eff)}"/>
         </L>
         <S i="508" l="396" v="{[0x400eff-0x400f25)}"/>
       </L>
       <S i="496" l="405" v="{[0x400f39-0x400f43)}"/>
-      <L i="528" l="406" v="{[0x400fbb-0x400fbc)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="528" l="406" v="{[0x400fbb-0x400fbc)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="549" l="406" v="{[0x400f43-0x400f4f) [0x400fb4-0x400fc4)}"/>
         <S i="529" l="407" v="{[0x400f4f-0x400f8e)}"/>
         <S i="541" l="408" v="{[0x400f8e-0x400fb4)}"/>
@@ -189,7 +189,7 @@
       <S i="581" l="446" v="{[0x401044-0x40104d)}"/>
       <S i="583" l="448" v="{[0x40104d-0x40105b)}"/>
       <S i="586" l="450" v="{[0x40105b-0x401069)}"/>
-      <L i="782" l="451" v="{[0x4010b0-0x4010b1)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="782" l="451" v="{[0x4010b0-0x4010b1)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="795" l="451" v="{[0x401069-0x401072) [0x4010ac-0x4010b6)}"/>
         <S i="783" l="453" v="{[0x401072-0x40107a)}"/>
         <S i="785" l="454" v="{[0x40107a-0x401089)}"/>
@@ -199,7 +199,7 @@
       <S i="590" l="460" v="{[0x4010b6-0x4010bf)}"/>
       <S i="592" l="461" v="{[0x4010bf-0x4010c8)}"/>
       <S i="594" l="462" v="{[0x4010c8-0x4010d1)}"/>
-      <L i="798" l="463" v="{[0x4011f7-0x4011f8)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="798" l="463" v="{[0x4011f7-0x4011f8)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="853" l="463" v="{[0x4010d1-0x4010de) [0x4011f2-0x401205)}"/>
         <S i="799" l="464" v="{[0x4010de-0x40113a)}"/>
         <S i="817" l="465" v="{[0x40113a-0x401196)}"/>
@@ -215,7 +215,7 @@
       <S i="628" l="487" v="{[0x4012a1-0x4012bd)}"/>
       <S i="634" l="488" v="{[0x4012bd-0x401316)}"/>
       <S i="654" l="489" v="{[0x401316-0x40131d)}"/>
-      <L i="856" l="490" v="{[0x4013ac-0x4013ad)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="856" l="490" v="{[0x4013ac-0x4013ad)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="881" l="490" v="{[0x40131d-0x40132a) [0x4013a7-0x4013ba)}"/>
         <S i="857" l="491" v="{[0x40132a-0x4013a3)}"/>
         <S i="880" l="492" v="{[0x4013a3-0x4013a7)}"/>
@@ -227,7 +227,7 @@
       <S i="683" l="506" v="{[0x40142f-0x401488)}"/>
       <S i="703" l="507" v="{[0x401488-0x4014a4)}"/>
       <S i="709" l="508" v="{[0x4014a4-0x4014ab)}"/>
-      <L i="884" l="509" v="{[0x40153a-0x40153b)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="884" l="509" v="{[0x40153a-0x40153b)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="909" l="509" v="{[0x4014ab-0x4014b8) [0x401535-0x401548)}"/>
         <S i="885" l="510" v="{[0x4014b8-0x401531)}"/>
         <S i="908" l="511" v="{[0x401531-0x401535)}"/>
@@ -239,7 +239,7 @@
       <S i="738" l="525" v="{[0x4015bd-0x401616)}"/>
       <S i="758" l="526" v="{[0x401616-0x401632)}"/>
       <S i="764" l="527" v="{[0x401632-0x401639)}"/>
-      <L i="912" l="528" v="{[0x4016c8-0x4016c9)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/stream.c">
+      <L i="912" l="528" v="{[0x4016c8-0x4016c9)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
         <S i="937" l="528" v="{[0x401639-0x401646) [0x4016c3-0x4016d6)}"/>
         <S i="913" l="529" v="{[0x401646-0x4016bf)}"/>
         <S i="936" l="530" v="{[0x4016bf-0x4016c3)}"/>

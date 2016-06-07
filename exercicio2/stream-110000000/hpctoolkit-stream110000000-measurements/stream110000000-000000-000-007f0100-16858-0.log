@@ -1,0 +1,13 @@
+[16858, N]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[16858, N]: NULL (0): ip = 0x7fdfd18251e7 (0xf11e7), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[16858, N]: NULL (0): ip = 0x7fdfd0ed4ef5 (0x25ef5), load module = /home/pedroeusebio/local/papi/lib/libpapi.so.5.4.3.0 | lip 
+[16858, N]: NULL (0): ip = 0x7fdfd1b03bb4 (0xabb4), load module = /home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0 | lip 
+[16858, N]: NULL (0): ip = 0x7fdfd176acb0 (0x36cb0), load module = /lib/x86_64-linux-gnu/libc-2.19.so | lip 
+[16858, N]: -- end backtrace ------------------------------------
+
+MEMORY: segment size: 4.0 meg, num segments: 1, total allocation: 4.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 0.0 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 0 (async: 0, dlopen: 0), errors: 1 (segv: 0, soft: 1)
+SUMMARY: samples: 155 (recorded: 155, blocked: 0, errant: 1, trolled: 0, yielded: 0),
+         frames: 314 (trolled: 0)
+         intervals: 121 (suspicious: 0)

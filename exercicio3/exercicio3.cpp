@@ -17,8 +17,8 @@ void fillArray(int** element, long n, int number) {
 
 
 void multiplyArray(int** result, int** vectorX, int** vectorY, long n){
-  for(int i = 0 ; i < n; i++){
-    for(int j = 0; j < n; j++){
+  for(int j = 0 ; j < n; j++){
+    for(int i = 0; i < n; i++){
       result[i][j] = 0;
       for(int k=0; k < n; k++) {
         result[i][j] = result[i][j] + vectorX[i][k] * vectorY[k][j];

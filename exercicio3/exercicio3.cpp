@@ -15,6 +15,18 @@ void fillArray(int** element, long n, int number) {
   }
 }
 
+
+void multiplyArray(int** result, int** vectorX, int** vectorY, long n){
+  for(int i = 0 ; i < n; i++){
+    for(int j = 0; j < n; j++){
+      result[i][j] = 0;
+      for(int k=0; k < n; k++) {
+        result[i][j] = result[i][j] + vectorX[i][k] * vectorY[k][j];
+      }
+    }
+  }
+}
+
 int main( int argc, const char* argv[]) {
   if(argc < 2) {
     cout<<"Usage is:\n"<<argv[0]<<
@@ -22,16 +34,24 @@ int main( int argc, const char* argv[]) {
       endl;
     return 0;
   }
-  
+
   long n = atol(argv[1]);
-  int **vector =  new int*[n];
+  int **vectorX = new int*[n];
+  int **vectorY = new int*[n];
+  int **vectorZ = new int*[n];
   for(int i = 0; i < n; i++) {
-    vector[i] = new int[n];
+    vectorX[i] = new int[n];
+    vectorY[i] = new int[n];
+    vectorZ[i] = new int[n];
   }
-  fillArray(vector, n, 10);
-  for (int i = 0; i < n; i++ ){
-    for(int j = 0; j < n; j++) {
-      cout << vector[i][j] << endl;
-    }
-  }
+  fillArray(vectorX, n, 2);
+  fillArray(vectorY, n, 1);
+
+  multiplyArray(vectorZ, vectorX, vectorY, n);
+
+  delete [] vectorX;
+  delete [] vectorY;
+  delete [] vectorZ;
+
+  return 0;
 }

@@ -1,0 +1,17 @@
+running O=1
+Starting running N=1000
+	0:03.07 real, 	3.06 user, 	0.00 sys
+
+
+Starting running N=2000
+	1:10.83 real, 	70.83 user, 	0.02 sys
+
+
+Starting running N=4000
+	12:33.23 real, 	753.27 user, 	0.25 sys
+
+
+Starting running N=6000
+	28:25.29 real, 	1705.27 user, 	0.60 sys
+
+

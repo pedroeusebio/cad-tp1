@@ -250,86 +250,14 @@
   <MetricDBTable>
   </MetricDBTable>
   <LoadModuleTable>
-    <LoadModule i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-100/stream100"/>
-    <LoadModule i="201" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
   </LoadModuleTable>
   <FileTable>
-    <File i="3" n="./src/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c"/>
-    <File i="202" n="&lt;unknown file&gt;"/>
   </FileTable>
   <ProcedureTable>
-    <Procedure i="4" n="main"/>
-    <Procedure i="105" n="checkSTREAMresults"/>
-    <Procedure i="203" n="&lt;program root&gt;" f="1"/>
   </ProcedureTable>
   <Info/>
 </SecHeader>
 <SecCallPathProfileData>
-<PF i="2" s="203" l="0" lm="201" f="202" n="203">
-<C i="3" s="204" l="0">
-<PF i="4" s="4" l="209" lm="2" f="3" n="4">
-<L i="5" s="20" l="269" f="3">
-<S i="6" s="23" l="271">
-<M n="2" v="30926"/>
-</S>
-<S i="7" s="24" l="272">
-<M n="2" v="7927"/>
-</S>
-</L>
-<L i="8" s="31" l="288" f="3">
-<S i="9" s="33" l="289">
-<M n="2" v="23942"/>
-</S>
-</L>
-<L i="10" s="45" l="308" f="3">
-<L i="11" s="48" l="315" f="3">
-<S i="12" s="49" l="315">
-<M n="0" v="4e+06"/><M n="1" v="1.81013e+07"/><M n="2" v="103815"/>
-</S>
-<S i="13" s="50" l="316">
-<M n="2" v="95824"/>
-</S>
-</L>
-<L i="14" s="53" l="325" f="3">
-<S i="15" s="54" l="325">
-<M n="0" v="2e+06"/><M n="1" v="1.04826e+07"/><M n="2" v="47921"/>
-</S>
-<S i="16" s="55" l="326">
-<M n="0" v="2e+06"/><M n="1" v="9.76467e+06"/><M n="2" v="191710"/>
-</S>
-</L>
-<L i="17" s="58" l="335" f="3">
-<S i="18" s="59" l="335">
-<M n="2" v="23916"/>
-</S>
-<S i="19" s="60" l="336">
-<M n="0" v="1.2e+07"/><M n="1" v="6.41536e+07"/><M n="2" v="207571"/>
-</S>
-</L>
-<L i="20" s="63" l="345" f="3">
-<S i="21" s="64" l="345">
-<M n="2" v="15973"/>
-</S>
-<S i="22" s="65" l="346">
-<M n="0" v="4e+06"/><M n="1" v="1.94868e+07"/><M n="2" v="239502"/>
-</S>
-</L>
-</L>
-<C i="23" s="81" l="376">
-<PF i="24" s="105" l="434" lm="2" f="3" n="105">
-<L i="25" s="121" l="463" f="3">
-<S i="26" s="122" l="463">
-<M n="2" v="7769"/>
-</S>
-<S i="27" s="123" l="464">
-<M n="2" v="39891"/>
-</S>
-</L>
-</PF>
-</C>
-</PF>
-</C>
-</PF>
 </SecCallPathProfileData>
 </SecCallPathProfile>
 </HPCToolkitExperiment>

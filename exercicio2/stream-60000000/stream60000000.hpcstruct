@@ -65,237 +65,386 @@
 <HPCToolkitStructure i="0" version="4.6" n="">
 <LM i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-60000000/stream60000000" v="{}">
   <F i="16" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-    <P i="17" n="main" l="209-380" v="{[0x4005cd-0x400e87)}">
-      <S i="101" l="210" v="{[0x4005cd-0x4005d8)}"/>
-      <S i="104" l="220" v="{[0x4005d8-0x4005e2)}"/>
-      <S i="106" l="221" v="{[0x4005e2-0x4005ec)}"/>
-      <S i="108" l="222" v="{[0x4005ec-0x4005f6)}"/>
-      <S i="110" l="223" v="{[0x4005f6-0x400600)}"/>
-      <S i="111" l="224" v="{[0x400600-0x400617)}"/>
-      <S i="116" l="227" v="{[0x400617-0x400621)}"/>
-      <S i="118" l="236" v="{[0x400621-0x40063a)}"/>
-      <S i="123" l="237" v="{[0x40063a-0x400671)}"/>
-      <S i="135" l="240" v="{[0x400685-0x400691) [0x4006a5-0x4006c0)}"/>
-      <S i="137" l="241" v="{[0x400691-0x4006a5)}"/>
-      <S i="132" l="242" v="{[0x400671-0x400685)}"/>
-      <S i="145" l="243" v="{[0x4006c0-0x4006d4)}"/>
-      <S i="149" l="244" v="{[0x4006d4-0x4006de)}"/>
-      <S i="151" l="245" v="{[0x4006de-0x4006e8)}"/>
-      <L i="232" l="269" v="{[0x400743-0x400744)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="242" l="269" v="{[0x4006e8-0x4006f5) [0x40073b-0x400750)}"/>
-        <S i="233" l="270" v="{[0x4006f5-0x40070e)}"/>
-        <S i="236" l="271" v="{[0x40070e-0x400727)}"/>
-        <S i="239" l="272" v="{[0x400727-0x40073b)}"/>
+    <P i="20" n="main" l="209-380" v="{[0x400b4d-0x401000)}">
+      <S i="416" l="210" v="{[0x400b4d-0x400b58)}"/>
+      <A i="576" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="220" v="{}">
+        <A i="577" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="578" l="104" v="{[0x400b58-0x400b62)}"/>
+        </A>
+      </A>
+      <A i="580" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="221" v="{}">
+        <A i="581" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="582" l="104" v="{[0x400b62-0x400b6c)}"/>
+        </A>
+      </A>
+      <A i="584" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="222" v="{}">
+        <A i="585" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="586" l="104" v="{[0x400b6c-0x400b76)}"/>
+        </A>
+      </A>
+      <A i="588" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="224" v="{}">
+        <A i="589" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="590" l="104" v="{[0x400b76-0x400b8f)}"/>
+        </A>
+      </A>
+      <A i="595" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="227" v="{}">
+        <A i="596" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="597" l="104" v="{[0x400b8f-0x400b99)}"/>
+        </A>
+      </A>
+      <A i="599" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="236" v="{}">
+        <A i="600" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="601" l="104" v="{[0x400b99-0x400bb7)}"/>
+        </A>
+      </A>
+      <A i="607" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="237" v="{}">
+        <A i="608" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="609" l="104" v="{[0x400bb7-0x400bdb)}"/>
+        </A>
+      </A>
+      <A i="615" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="240" v="{}">
+        <A i="616" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="617" l="104" v="{[0x400bdb-0x400bff)}"/>
+        </A>
+      </A>
+      <A i="623" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="243" v="{}">
+        <A i="624" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="625" l="104" v="{[0x400bff-0x400c18)}"/>
+        </A>
+      </A>
+      <A i="630" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="244" v="{}">
+        <A i="631" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="632" l="104" v="{[0x400c18-0x400c22)}"/>
+        </A>
+      </A>
+      <A i="634" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="245" v="{}">
+        <A i="635" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="636" l="104" v="{[0x400c22-0x400c2c)}"/>
+        </A>
+      </A>
+      <L i="455" l="269" v="{[0x400c45-0x400c46)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="459" l="269" v="{[0x400c2c-0x400c31) [0x400c60-0x400c6c)}"/>
+        <S i="456" l="270" v="{[0x400c31-0x400c39) [0x400c45-0x400c4e)}"/>
+        <S i="457" l="271" v="{[0x400c39-0x400c41) [0x400c4e-0x400c57)}"/>
+        <S i="458" l="272" v="{[0x400c41-0x400c45) [0x400c57-0x400c60)}"/>
       </L>
-      <S i="155" l="275" v="{[0x400750-0x40075a)}"/>
-      <S i="157" l="277" v="{[0x40075a-0x400773)}"/>
-      <S i="162" l="278" v="{[0x400773-0x40078c)}"/>
-      <S i="168" l="281" v="{[0x40078c-0x400796)}"/>
-      <S i="170" l="283" v="{[0x400796-0x4007a0)}"/>
-      <S i="171" l="286" v="{[0x4007a0-0x4007c0)}"/>
-      <L i="245" l="288" v="{[0x4007f9-0x4007fa)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="251" l="288" v="{[0x4007c0-0x4007cd) [0x4007f1-0x400806)}"/>
-        <S i="246" l="289" v="{[0x4007cd-0x4007f1)}"/>
+      <A i="638" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="275" v="{}">
+        <A i="639" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="640" l="104" v="{[0x400c6c-0x400c76)}"/>
+        </A>
+      </A>
+      <S i="424" l="277" v="{[0x400c76-0x400c86)}"/>
+      <A i="642" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="278" v="{}">
+        <A i="643" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="644" l="104" v="{[0x400c86-0x400c9e)}"/>
+        </A>
+      </A>
+      <A i="650" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="281" v="{}">
+        <A i="651" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="652" l="104" v="{[0x400c9e-0x400ca8)}"/>
+        </A>
+      </A>
+      <S i="429" l="283" v="{[0x400ca8-0x400cad)}"/>
+      <S i="430" l="286" v="{[0x400cad-0x400cbd)}"/>
+      <L i="462" l="288" v="{[0x400cc2-0x400cc3)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="466" l="288" v="{[0x400cbd-0x400cc2) [0x400cd8-0x400ce5)}"/>
+        <S i="463" l="289" v="{[0x400cc2-0x400cd8)}"/>
       </L>
-      <S i="178" l="290" v="{[0x400806-0x40082c)}"/>
-      <S i="184" l="292" v="{[0x40082c-0x400849)}"/>
-      <S i="190" l="294" v="{[0x400849-0x400876)}"/>
-      <S i="199" l="295" v="{[0x400876-0x400880)}"/>
-      <S i="201" l="296" v="{[0x400880-0x40088a)}"/>
-      <S i="203" l="298" v="{[0x40088a-0x400894)}"/>
-      <S i="205" l="300" v="{[0x400894-0x40089e)}"/>
-      <S i="207" l="301" v="{[0x40089e-0x4008a8)}"/>
-      <S i="209" l="302" v="{[0x4008a8-0x4008b2)}"/>
-      <S i="211" l="303" v="{[0x4008b2-0x4008bc)}"/>
-      <S i="213" l="307" v="{[0x4008bc-0x4008cd)}"/>
-      <L i="254" l="308" v="{[0x400bad-0x400bae)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="336" l="308" v="{[0x4008cd-0x4008dc) [0x400ba6-0x400bba)}"/>
-        <S i="255" l="310" v="{[0x4008dc-0x400906)}"/>
-        <L i="339" l="315" v="{[0x400939-0x40093a)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="344" l="315" v="{[0x400906-0x400913) [0x400931-0x400946)}"/>
-          <S i="340" l="316" v="{[0x400913-0x400931)}"/>
+      <S i="434" l="290" v="{[0x400ce5-0x400cfd)}"/>
+      <A i="654" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="292" v="{}">
+        <A i="655" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="656" l="104" v="{[0x400d07-0x400d1b)}"/>
+        </A>
+      </A>
+      <S i="438" l="292" v="{[0x400cfd-0x400d07)}"/>
+      <A i="660" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="294" v="{}">
+        <A i="661" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="662" l="104" v="{[0x400d2d-0x400d41)}"/>
+        </A>
+      </A>
+      <S i="440" l="294" v="{[0x400d1b-0x400d2d)}"/>
+      <A i="666" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="295" v="{}">
+        <A i="667" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="668" l="104" v="{[0x400d41-0x400d4b)}"/>
+        </A>
+      </A>
+      <A i="670" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="296" v="{}">
+        <A i="671" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="672" l="104" v="{[0x400d4b-0x400d55)}"/>
+        </A>
+      </A>
+      <A i="674" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="298" v="{}">
+        <A i="675" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="676" l="104" v="{[0x400d55-0x400d5f)}"/>
+        </A>
+      </A>
+      <A i="678" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="300" v="{}">
+        <A i="679" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="680" l="104" v="{[0x400d5f-0x400d69)}"/>
+        </A>
+      </A>
+      <A i="682" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="301" v="{}">
+        <A i="683" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="684" l="104" v="{[0x400d69-0x400d73)}"/>
+        </A>
+      </A>
+      <A i="686" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="302" v="{}">
+        <A i="687" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="688" l="104" v="{[0x400d73-0x400d7d)}"/>
+        </A>
+      </A>
+      <A i="690" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="303" v="{}">
+        <A i="691" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="692" l="104" v="{[0x400d7d-0x400d90)}"/>
+        </A>
+      </A>
+      <L i="469" l="308" v="{[0x400d90-0x400d91)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="504" l="308" v="{[0x400ede-0x400eee)}"/>
+        <S i="470" l="310" v="{[0x400d90-0x400da3)}"/>
+        <L i="506" l="315" v="{[0x400da8-0x400da9)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="509" l="315" v="{[0x400da3-0x400da8) [0x400dba-0x400dc6)}"/>
+          <S i="507" l="316" v="{[0x400da8-0x400dba)}"/>
         </L>
-        <S i="264" l="318" v="{[0x400946-0x400976)}"/>
-        <S i="273" l="320" v="{[0x400976-0x4009a4)}"/>
-        <L i="347" l="325" v="{[0x4009e1-0x4009e2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="353" l="325" v="{[0x4009a4-0x4009b1) [0x4009d9-0x4009ee)}"/>
-          <S i="348" l="326" v="{[0x4009b1-0x4009d9)}"/>
+        <S i="475" l="318" v="{[0x400dc6-0x400dda)}"/>
+        <S i="479" l="320" v="{[0x400dda-0x400dea)}"/>
+        <L i="512" l="325" v="{[0x400def-0x400df0)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="516" l="325" v="{[0x400dea-0x400def) [0x400e09-0x400e15)}"/>
+          <S i="513" l="326" v="{[0x400def-0x400e09)}"/>
         </L>
-        <S i="283" l="328" v="{[0x4009ee-0x400a26)}"/>
-        <S i="294" l="330" v="{[0x400a26-0x400a54)}"/>
-        <L i="356" l="335" v="{[0x400a9d-0x400a9e)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="364" l="335" v="{[0x400a54-0x400a61) [0x400a95-0x400aaa)}"/>
-          <S i="357" l="336" v="{[0x400a61-0x400a95)}"/>
+        <S i="483" l="328" v="{[0x400e15-0x400e2a)}"/>
+        <S i="487" l="330" v="{[0x400e2a-0x400e3a)}"/>
+        <L i="519" l="335" v="{[0x400e3f-0x400e40)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="523" l="335" v="{[0x400e3a-0x400e3f) [0x400e5a-0x400e66)}"/>
+          <S i="520" l="336" v="{[0x400e3f-0x400e5a)}"/>
         </L>
-        <S i="304" l="338" v="{[0x400aaa-0x400ae2)}"/>
-        <S i="315" l="340" v="{[0x400ae2-0x400b10)}"/>
-        <L i="367" l="345" v="{[0x400b61-0x400b62)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="376" l="345" v="{[0x400b10-0x400b1d) [0x400b59-0x400b6e)}"/>
-          <S i="368" l="346" v="{[0x400b1d-0x400b59)}"/>
+        <S i="491" l="338" v="{[0x400e66-0x400e7e)}"/>
+        <S i="495" l="340" v="{[0x400e7e-0x400e8e)}"/>
+        <L i="526" l="345" v="{[0x400e93-0x400e94)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="531" l="345" v="{[0x400e8e-0x400e93) [0x400eb6-0x400ec2)}"/>
+          <S i="527" l="346" v="{[0x400e93-0x400eb6)}"/>
         </L>
-        <S i="325" l="348" v="{[0x400b6e-0x400ba6)}"/>
+        <S i="499" l="348" v="{[0x400ec2-0x400ede)}"/>
       </L>
-      <L i="379" l="353" v="{[0x400d51-0x400d52)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="382" l="353" v="{[0x400bba-0x400bc9) [0x400d4a-0x400d5e)}"/>
-        <L i="385" l="355" v="{[0x400d3c-0x400d3d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="454" l="355" v="{[0x400bc9-0x400bd9) [0x400d34-0x400d4a)}"/>
-          <S i="386" l="357" v="{[0x400bd9-0x400c26)}"/>
-          <S i="400" l="358" v="{[0x400c26-0x400cad)}"/>
-          <S i="427" l="359" v="{[0x400cad-0x400d34)}"/>
+      <L i="534" l="353" v="{[0x400f4b-0x400f4c)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <A i="538" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="&lt;inline&gt;" l="345" v="{}">
+          <S i="539" l="345" v="{[0x400f4b-0x400f55)}"/>
+        </A>
+        <S i="536" l="353" v="{[0x400f46-0x400f4b)}"/>
+        <L i="542" l="355" v="{[0x400eee-0x400eef)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="553" l="355" v="{[0x400f34-0x400f46)}"/>
+          <S i="543" l="357" v="{[0x400eee-0x400f08)}"/>
+          <S i="547" l="358" v="{[0x400f08-0x400f1e)}"/>
+          <S i="550" l="359" v="{[0x400f1e-0x400f34)}"/>
         </L>
       </L>
-      <S i="219" l="363" v="{[0x400d5e-0x400d68)}"/>
-      <L i="457" l="364" v="{[0x400e54-0x400e55)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="488" l="364" v="{[0x400d68-0x400d78) [0x400e4c-0x400e62)}"/>
-        <S i="458" l="365" v="{[0x400d78-0x400da4)}"/>
-        <S i="464" l="367" v="{[0x400da4-0x400dd1) [0x400dfd-0x400e4c)}"/>
-        <S i="470" l="368" v="{[0x400dd1-0x400dfd)}"/>
+      <A i="696" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="363" v="{}">
+        <A i="697" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="698" l="104" v="{[0x400f55-0x400f5f)}"/>
+        </A>
+      </A>
+      <L i="557" l="364" v="{[0x400f64-0x400f65)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="565" l="364" v="{[0x400f5f-0x400f64) [0x400fc1-0x400fcb)}"/>
+        <S i="558" l="365" v="{[0x400f64-0x400f7e)}"/>
+        <A i="568" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="367" v="{}">
+          <A i="569" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+            <S i="570" l="104" v="{[0x400f9c-0x400fc1)}"/>
+          </A>
+        </A>
+        <S i="564" l="367" v="{[0x400f98-0x400f9c)}"/>
+        <S i="561" l="368" v="{[0x400f7e-0x400f98)}"/>
       </L>
-      <S i="223" l="373" v="{[0x400e62-0x400e6c)}"/>
-      <S i="225" l="376" v="{[0x400e6c-0x400e76)}"/>
-      <S i="227" l="377" v="{[0x400e76-0x400e80)}"/>
-      <S i="229" l="379" v="{[0x400e80-0x400e85)}"/>
-      <S i="230" l="380" v="{[0x400e85-0x400e87)}"/>
+      <A i="700" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="373" v="{}">
+        <A i="701" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="702" l="104" v="{[0x400fcb-0x400fd5)}"/>
+        </A>
+      </A>
+      <S i="447" l="376" v="{[0x400fd5-0x400fdf)}"/>
+      <A i="704" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="377" v="{}">
+        <A i="705" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="706" l="104" v="{[0x400fdf-0x400fe9)}"/>
+        </A>
+      </A>
+      <S i="449" l="380" v="{[0x400fe9-0x400ffa)}"/>
     </P>
-    <P i="18" n="checktick" l="385-412" v="{[0x400e87-0x400fcc)}">
-      <S i="491" l="386" v="{[0x400e87-0x400e92)}"/>
-      <L i="502" l="392" v="{[0x400f2c-0x400f2d)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="514" l="392" v="{[0x400e92-0x400ea1) [0x400f25-0x400f39)}"/>
-        <S i="503" l="393" v="{[0x400ea1-0x400ec1)}"/>
-        <L i="517" l="394" v="{[0x400ec1-0x400ec2)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-          <S i="518" l="394" v="{[0x400ec1-0x400eff)}"/>
+    <P i="18" n="checktick" l="385-412" v="{[0x40061d-0x4006b7)}">
+      <S i="111" l="386" v="{[0x40061d-0x400633)}"/>
+      <L i="124" l="392" v="{[0x400633-0x400634)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="130" l="392" v="{[0x40066d-0x40067c)}"/>
+        <S i="125" l="393" v="{[0x400633-0x400643)}"/>
+        <L i="132" l="394" v="{[0x400643-0x400644)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+          <S i="133" l="394" v="{[0x400643-0x400665)}"/>
         </L>
-        <S i="508" l="396" v="{[0x400eff-0x400f25)}"/>
+        <S i="128" l="396" v="{[0x400665-0x40066d)}"/>
       </L>
-      <S i="496" l="405" v="{[0x400f39-0x400f43)}"/>
-      <L i="528" l="406" v="{[0x400fbb-0x400fbc)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="549" l="406" v="{[0x400f43-0x400f4f) [0x400fb4-0x400fc4)}"/>
-        <S i="529" l="407" v="{[0x400f4f-0x400f8e)}"/>
-        <S i="541" l="408" v="{[0x400f8e-0x400fb4)}"/>
+      <L i="140" l="406" v="{[0x400689-0x40068a)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="150" l="406" v="{[0x4006a8-0x4006ad)}"/>
+        <S i="141" l="407" v="{[0x40067c-0x400684) [0x400689-0x40069a)}"/>
+        <S i="145" l="408" v="{[0x400684-0x400689) [0x40069a-0x4006a8)}"/>
       </L>
-      <S i="499" l="411" v="{[0x400fc4-0x400fca)}"/>
-      <S i="500" l="412" v="{[0x400fca-0x400fcc)}"/>
+      <S i="120" l="412" v="{[0x4006ad-0x4006b7)}"/>
     </P>
-    <P i="19" n="mysecond" l="421-429" v="{[0x400fcc-0x401020)}">
-      <S i="552" l="422" v="{[0x400fcc-0x400fd4)}"/>
-      <S i="555" l="427" v="{[0x400fd4-0x400fea)}"/>
-      <S i="561" l="428" v="{[0x400fea-0x401015)}"/>
-      <S i="570" l="429" v="{[0x401015-0x401020)}"/>
+    <P i="17" n="mysecond" l="421-429" v="{[0x4005ed-0x40061d)}">
+      <S i="101" l="422" v="{[0x4005ed-0x4005f1)}"/>
+      <S i="102" l="427" v="{[0x4005f1-0x4005fe)}"/>
+      <S i="105" l="428" v="{[0x4005fe-0x400618)}"/>
+      <S i="109" l="429" v="{[0x400618-0x40061d)}"/>
     </P>
-    <P i="20" n="checkSTREAMresults" l="434-550" v="{[0x401020-0x401710)}">
-      <S i="574" l="435" v="{[0x401020-0x401028)}"/>
-      <S i="577" l="444" v="{[0x401028-0x401036)}"/>
-      <S i="579" l="445" v="{[0x401036-0x401044)}"/>
-      <S i="581" l="446" v="{[0x401044-0x40104d)}"/>
-      <S i="583" l="448" v="{[0x40104d-0x40105b)}"/>
-      <S i="586" l="450" v="{[0x40105b-0x401069)}"/>
-      <L i="782" l="451" v="{[0x4010b0-0x4010b1)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="795" l="451" v="{[0x401069-0x401072) [0x4010ac-0x4010b6)}"/>
-        <S i="783" l="453" v="{[0x401072-0x40107a)}"/>
-        <S i="785" l="454" v="{[0x40107a-0x401089)}"/>
-        <S i="788" l="455" v="{[0x401089-0x401098)}"/>
-        <S i="791" l="456" v="{[0x401098-0x4010ac)}"/>
+    <P i="19" n="checkSTREAMresults" l="434-550" v="{[0x4006b7-0x400b4d)}">
+      <S i="152" l="435" v="{[0x4006b7-0x4006c1)}"/>
+      <S i="155" l="448" v="{[0x4006c1-0x4006ce)}"/>
+      <L i="248" l="451" v="{[0x4006d6-0x4006d7)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="259" l="451" v="{[0x400704-0x40071a)}"/>
+        <S i="249" l="454" v="{[0x4006ce-0x4006e9)}"/>
+        <S i="253" l="455" v="{[0x4006e9-0x4006f3)}"/>
+        <S i="255" l="456" v="{[0x4006f3-0x400704)}"/>
       </L>
-      <S i="590" l="460" v="{[0x4010b6-0x4010bf)}"/>
-      <S i="592" l="461" v="{[0x4010bf-0x4010c8)}"/>
-      <S i="594" l="462" v="{[0x4010c8-0x4010d1)}"/>
-      <L i="798" l="463" v="{[0x4011f7-0x4011f8)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="853" l="463" v="{[0x4010d1-0x4010de) [0x4011f2-0x401205)}"/>
-        <S i="799" l="464" v="{[0x4010de-0x40113a)}"/>
-        <S i="817" l="465" v="{[0x40113a-0x401196)}"/>
-        <S i="835" l="466" v="{[0x401196-0x4011f2)}"/>
+      <L i="261" l="463" v="{[0x400739-0x40073a)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="284" l="463" v="{[0x4007a1-0x4007ad)}"/>
+        <S i="263" l="464" v="{[0x40071a-0x400727) [0x40073c-0x40075d)}"/>
+        <S i="270" l="465" v="{[0x400727-0x400730) [0x40075d-0x40077f)}"/>
+        <S i="262" l="466" v="{[0x400730-0x40073c) [0x40077f-0x4007a1)}"/>
       </L>
-      <S i="598" l="469" v="{[0x401205-0x40121b)}"/>
-      <S i="602" l="470" v="{[0x40121b-0x401231)}"/>
-      <S i="606" l="471" v="{[0x401231-0x401247)}"/>
-      <S i="610" l="477" v="{[0x401247-0x401255)}"/>
-      <S i="612" l="484" v="{[0x401255-0x40125c)}"/>
-      <S i="613" l="485" v="{[0x40125c-0x40129d)}"/>
-      <S i="627" l="486" v="{[0x40129d-0x4012a1)}"/>
-      <S i="628" l="487" v="{[0x4012a1-0x4012bd)}"/>
-      <S i="634" l="488" v="{[0x4012bd-0x401316)}"/>
-      <S i="654" l="489" v="{[0x401316-0x40131d)}"/>
-      <L i="856" l="490" v="{[0x4013ac-0x4013ad)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="881" l="490" v="{[0x40131d-0x40132a) [0x4013a7-0x4013ba)}"/>
-        <S i="857" l="491" v="{[0x40132a-0x4013a3)}"/>
-        <S i="880" l="492" v="{[0x4013a3-0x4013a7)}"/>
+      <S i="168" l="469" v="{[0x4007ad-0x4007bf)}"/>
+      <S i="171" l="470" v="{[0x4007bf-0x4007c9)}"/>
+      <S i="173" l="471" v="{[0x4007c9-0x4007d3)}"/>
+      <S i="182" l="484" v="{[0x4007f6-0x4007fb)}"/>
+      <S i="175" l="485" v="{[0x4007d3-0x4007f6) [0x4007fb-0x400809)}"/>
+      <S i="197" l="486" v="{[0x4008d8-0x4008df)}"/>
+      <A i="329" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="487" v="{}">
+        <A i="330" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="331" l="104" v="{[0x400809-0x400825)}"/>
+        </A>
+      </A>
+      <A i="336" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="488" v="{}">
+        <A i="337" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="338" l="104" v="{[0x400845-0x400868)}"/>
+        </A>
+      </A>
+      <S i="185" l="488" v="{[0x400825-0x400845)}"/>
+      <S i="191" l="489" v="{[0x400868-0x40086d)}"/>
+      <L i="287" l="490" v="{[0x40088e-0x40088f)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="298" l="490" v="{[0x40086d-0x400872) [0x4008b8-0x4008c4)}"/>
+        <S i="288" l="491" v="{[0x400872-0x4008ae)}"/>
+        <S i="295" l="492" v="{[0x4008ae-0x4008b8)}"/>
       </L>
-      <S i="657" l="501" v="{[0x4013ba-0x4013ce)}"/>
-      <S i="662" l="503" v="{[0x4013ce-0x40140f)}"/>
-      <S i="676" l="504" v="{[0x40140f-0x401413)}"/>
-      <S i="677" l="505" v="{[0x401413-0x40142f)}"/>
-      <S i="683" l="506" v="{[0x40142f-0x401488)}"/>
-      <S i="703" l="507" v="{[0x401488-0x4014a4)}"/>
-      <S i="709" l="508" v="{[0x4014a4-0x4014ab)}"/>
-      <L i="884" l="509" v="{[0x40153a-0x40153b)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="909" l="509" v="{[0x4014ab-0x4014b8) [0x401535-0x401548)}"/>
-        <S i="885" l="510" v="{[0x4014b8-0x401531)}"/>
-        <S i="908" l="511" v="{[0x401531-0x401535)}"/>
+      <A i="345" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="501" v="{}">
+        <A i="346" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="347" l="104" v="{[0x4008c4-0x4008d8)}"/>
+        </A>
+      </A>
+      <S i="199" l="503" v="{[0x4008df-0x400913)}"/>
+      <S i="208" l="504" v="{[0x400913-0x400916)}"/>
+      <A i="351" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="505" v="{}">
+        <A i="352" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="353" l="104" v="{[0x400916-0x400932)}"/>
+        </A>
+      </A>
+      <A i="358" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="506" v="{}">
+        <A i="359" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="360" l="104" v="{[0x400952-0x400976)}"/>
+        </A>
+      </A>
+      <S i="209" l="506" v="{[0x400932-0x400952)}"/>
+      <A i="367" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="507" v="{}">
+        <A i="368" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="369" l="104" v="{[0x400976-0x400992)}"/>
+        </A>
+      </A>
+      <S i="215" l="508" v="{[0x400992-0x400997)}"/>
+      <L i="301" l="509" v="{[0x4009b8-0x4009b9)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="312" l="509" v="{[0x400997-0x40099c) [0x4009e3-0x4009ef)}"/>
+        <S i="302" l="510" v="{[0x40099c-0x4009d9)}"/>
+        <S i="309" l="511" v="{[0x4009d9-0x4009e3)}"/>
       </L>
-      <S i="712" l="520" v="{[0x401548-0x40155c)}"/>
-      <S i="717" l="522" v="{[0x40155c-0x40159d)}"/>
-      <S i="731" l="523" v="{[0x40159d-0x4015a1)}"/>
-      <S i="732" l="524" v="{[0x4015a1-0x4015bd)}"/>
-      <S i="738" l="525" v="{[0x4015bd-0x401616)}"/>
-      <S i="758" l="526" v="{[0x401616-0x401632)}"/>
-      <S i="764" l="527" v="{[0x401632-0x401639)}"/>
-      <L i="912" l="528" v="{[0x4016c8-0x4016c9)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
-        <S i="937" l="528" v="{[0x401639-0x401646) [0x4016c3-0x4016d6)}"/>
-        <S i="913" l="529" v="{[0x401646-0x4016bf)}"/>
-        <S i="936" l="530" v="{[0x4016bf-0x4016c3)}"/>
+      <A i="374" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="520" v="{}">
+        <A i="375" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="376" l="104" v="{[0x4009ef-0x400a03)}"/>
+        </A>
+      </A>
+      <S i="221" l="522" v="{[0x400a03-0x400a37)}"/>
+      <S i="230" l="523" v="{[0x400a37-0x400a3a)}"/>
+      <A i="380" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="524" v="{}">
+        <A i="381" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="382" l="104" v="{[0x400a3a-0x400a56)}"/>
+        </A>
+      </A>
+      <A i="387" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="525" v="{}">
+        <A i="388" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="389" l="104" v="{[0x400a76-0x400a9a)}"/>
+        </A>
+      </A>
+      <S i="231" l="525" v="{[0x400a56-0x400a76)}"/>
+      <A i="396" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="526" v="{}">
+        <A i="397" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="398" l="104" v="{[0x400a9a-0x400ab6)}"/>
+        </A>
+      </A>
+      <S i="237" l="527" v="{[0x400ab6-0x400abb)}"/>
+      <L i="315" l="528" v="{[0x400adc-0x400add)}" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c">
+        <S i="326" l="528" v="{[0x400abb-0x400ac0) [0x400b07-0x400b13)}"/>
+        <S i="316" l="529" v="{[0x400ac0-0x400afd)}"/>
+        <S i="323" l="530" v="{[0x400afd-0x400b07)}"/>
       </L>
-      <S i="767" l="539" v="{[0x4016d6-0x4016ea)}"/>
-      <S i="772" l="541" v="{[0x4016ea-0x4016f0)}"/>
-      <S i="774" l="542" v="{[0x4016f0-0x40170c)}"/>
-      <S i="780" l="550" v="{[0x40170c-0x40170e)}"/>
+      <A i="403" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="539" v="{}">
+        <A i="404" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="405" l="104" v="{[0x400b13-0x400b27)}"/>
+        </A>
+      </A>
+      <S i="243" l="541" v="{[0x400b27-0x400b2b)}"/>
+      <A i="409" f="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c" n="" l="542" v="{}">
+        <A i="410" f="/usr/include/x86_64-linux-gnu/bits/stdio2.h" n="printf" l="104" v="{}">
+          <S i="411" l="104" v="{[0x400b2b-0x400b47)}"/>
+        </A>
+      </A>
+      <S i="245" l="550" v="{[0x400b47-0x400b4d)}"/>
     </P>
   </F>
   <F i="3" n="&lt;unknown file&gt;">
-    <P i="9" n="__gmon_start__@plt" l="0" v="{[0x4004d0-0x4004e0)}">
-      <S i="35" l="0" v="{[0x4004d0-0x4004d6)}"/>
+    <P i="8" n="__gmon_start__@plt" l="0" v="{[0x4004e0-0x4004f0)}">
+      <S i="34" l="0" v="{[0x4004e0-0x4004e6)}"/>
     </P>
-    <P i="22" n="__libc_csu_fini" l="0" v="{[0x401780-0x401782)}">
-      <S i="975" l="0" v="{[0x401780-0x401782)}"/>
+    <P i="22" n="__libc_csu_fini" l="0" v="{[0x401070-0x401072)}">
+      <S i="743" l="0" v="{[0x401070-0x401072)}"/>
     </P>
-    <P i="21" n="__libc_csu_init" l="0" v="{[0x401710-0x401780)}">
-      <L i="967" l="0" v="{[0x401750-0x401751)}" f="">
-        <S i="968" l="0" v="{[0x401710-0x401775)}"/>
+    <P i="21" n="__libc_csu_init" l="0" v="{[0x401000-0x401070)}">
+      <L i="735" l="0" v="{[0x401040-0x401041)}" f="">
+        <S i="736" l="0" v="{[0x401000-0x401065)}"/>
       </L>
     </P>
-    <P i="8" n="__libc_start_main@plt" l="0" v="{[0x4004c0-0x4004d0)}">
-      <S i="34" l="0" v="{[0x4004c0-0x4004c6)}"/>
+    <P i="7" n="__libc_start_main@plt" l="0" v="{[0x4004d0-0x4004e0)}">
+      <S i="33" l="0" v="{[0x4004d0-0x4004d6)}"/>
     </P>
-    <P i="23" n="_fini" l="0" v="{[0x401784-0x40178d)}">
-      <S i="976" l="0" v="{[0x401784-0x40178d)}"/>
+    <P i="9" n="__printf_chk@plt" l="0" v="{[0x4004f0-0x400500)}">
+      <S i="35" l="0" v="{[0x4004f0-0x4004f6)}"/>
     </P>
-    <P i="4" n="_init" l="0" v="{[0x400458-0x400472)}">
-      <S i="24" l="0" v="{[0x400458-0x400472)}"/>
+    <P i="23" n="_fini" l="0" v="{[0x401074-0x40107d)}">
+      <S i="744" l="0" v="{[0x401074-0x40107d)}"/>
     </P>
-    <P i="10" n="_start" l="0" v="{[0x4004e0-0x400510)}">
-      <S i="36" l="0" v="{[0x4004e0-0x40050a)}"/>
+    <P i="4" n="_init" l="0" v="{[0x400478-0x400492)}">
+      <S i="24" l="0" v="{[0x400478-0x400492)}"/>
     </P>
-    <P i="7" n="gettimeofday@plt" l="0" v="{[0x4004b0-0x4004c0)}">
-      <S i="33" l="0" v="{[0x4004b0-0x4004b6)}"/>
+    <P i="10" n="_start" l="0" v="{[0x400500-0x400530)}">
+      <S i="36" l="0" v="{[0x400500-0x40052a)}"/>
     </P>
-    <P i="6" n="printf@plt" l="0" v="{[0x4004a0-0x4004b0)}">
-      <S i="32" l="0" v="{[0x4004a0-0x4004a6)}"/>
+    <P i="6" n="gettimeofday@plt" l="0" v="{[0x4004c0-0x4004d0)}">
+      <S i="32" l="0" v="{[0x4004c0-0x4004c6)}"/>
     </P>
-    <P i="5" n="puts@plt" l="0" v="{[0x400490-0x4004a0)}">
-      <S i="31" l="0" v="{[0x400490-0x400496)}"/>
+    <P i="5" n="puts@plt" l="0" v="{[0x4004b0-0x4004c0)}">
+      <S i="31" l="0" v="{[0x4004b0-0x4004b6)}"/>
     </P>
   </F>
   <F i="11" n="crtstuff.c">
-    <P i="14" n="__do_global_dtors_aux" l="0" v="{[0x400580-0x4005a0)}">
-      <S i="81" l="0" v="{[0x400580-0x40059c)}"/>
+    <P i="14" n="__do_global_dtors_aux" l="0" v="{[0x4005a0-0x4005c0)}">
+      <S i="81" l="0" v="{[0x4005a0-0x4005bc)}"/>
     </P>
-    <P i="12" n="deregister_tm_clones" l="0" v="{[0x400510-0x400540)}">
-      <S i="48" l="0" v="{[0x400510-0x400539)}"/>
+    <P i="12" n="deregister_tm_clones" l="0" v="{[0x400530-0x400560)}">
+      <S i="48" l="0" v="{[0x400530-0x400559)}"/>
     </P>
-    <P i="15" n="frame_dummy" l="0" v="{[0x4005a0-0x4005cd)}">
-      <S i="89" l="0" v="{[0x4005a0-0x4005c5) [0x4005c8-0x4005cd)}"/>
+    <P i="15" n="frame_dummy" l="0" v="{[0x4005c0-0x4005ed)}">
+      <S i="89" l="0" v="{[0x4005c0-0x4005e5) [0x4005e8-0x4005ed)}"/>
     </P>
-    <P i="13" n="register_tm_clones" l="0" v="{[0x400540-0x400580)}">
-      <S i="62" l="0" v="{[0x400540-0x400579)}"/>
+    <P i="13" n="register_tm_clones" l="0" v="{[0x400560-0x4005a0)}">
+      <S i="62" l="0" v="{[0x400560-0x400599)}"/>
     </P>
   </F>
 </LM>

@@ -7,7 +7,7 @@
 using namespace std;
 
 
-void fillArray(char* element, long n, int number) {
+void fillArray(int** element, long n, int number) {
   for (int i = 0; i < n; i++ ){
     for(int j = 0; j < n; j++) {
       element[i][j] = number;
@@ -24,11 +24,14 @@ int main( int argc, const char* argv[]) {
   }
   
   long n = atol(argv[1]);
-  char *vector =  new char[n][n];
+  int **vector =  new int*[n];
+  for(int i = 0; i < n; i++) {
+    vector[i] = new int[n];
+  }
   fillArray(vector, n, 10);
   for (int i = 0; i < n; i++ ){
     for(int j = 0; j < n; j++) {
-      cout << vector[i][j];
+      cout << vector[i][j] << endl;
     }
   }
 }

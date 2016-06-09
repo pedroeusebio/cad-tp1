@@ -251,87 +251,81 @@
   </MetricDBTable>
   <LoadModuleTable>
     <LoadModule i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-10000000/stream10000000"/>
-    <LoadModule i="201" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
+    <LoadModule i="271" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
   </LoadModuleTable>
   <FileTable>
     <File i="3" n="./src/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c"/>
-    <File i="202" n="&lt;unknown file&gt;"/>
+    <File i="272" n="&lt;unknown file&gt;"/>
   </FileTable>
   <ProcedureTable>
     <Procedure i="4" n="main"/>
-    <Procedure i="105" n="checkSTREAMresults"/>
-    <Procedure i="203" n="&lt;program root&gt;" f="1"/>
+    <Procedure i="157" n="checkSTREAMresults"/>
+    <Procedure i="273" n="&lt;program root&gt;" f="1"/>
   </ProcedureTable>
   <Info/>
 </SecHeader>
 <SecCallPathProfileData>
-<PF i="2" s="203" l="0" lm="201" f="202" n="203">
-<C i="3" s="204" l="0">
+<PF i="2" s="273" l="0" lm="271" f="272" n="273">
+<C i="3" s="274" l="0">
 <PF i="4" s="4" l="209" lm="2" f="3" n="4">
-<L i="5" s="20" l="269" f="3">
-<S i="6" s="21" l="269">
-<M n="2" v="7950"/>
+<L i="5" s="39" l="269" f="3">
+<S i="6" s="40" l="269">
+<M n="2" v="15916"/>
 </S>
-<S i="7" s="22" l="270">
-<M n="2" v="7967"/>
+<S i="7" s="42" l="271">
+<M n="2" v="6633"/>
 </S>
-<S i="8" s="24" l="272">
-<M n="2" v="29358"/>
-</S>
-</L>
-<L i="9" s="31" l="288" f="3">
-<S i="10" s="32" l="288">
-<M n="2" v="7975"/>
-</S>
-<S i="11" s="33" l="289">
-<M n="2" v="15963"/>
+<S i="8" s="43" l="272">
+<M n="2" v="15490"/>
 </S>
 </L>
-<L i="12" s="45" l="308" f="3">
-<L i="13" s="48" l="315" f="3">
-<S i="14" s="49" l="315">
-<M n="0" v="4e+06"/><M n="1" v="1.70886e+07"/><M n="2" v="135731"/>
-</S>
-<S i="15" s="50" l="316">
-<M n="0" v="2e+06"/><M n="1" v="8.33655e+06"/><M n="2" v="87836"/>
+<L i="9" s="56" l="288" f="3">
+<S i="10" s="57" l="288">
+<M n="2" v="7994"/>
 </S>
 </L>
-<L i="16" s="53" l="325" f="3">
-<S i="17" s="54" l="325">
-<M n="2" v="39926"/>
+<L i="11" s="89" l="308" f="3">
+<L i="12" s="92" l="315" f="3">
+<S i="13" s="93" l="315">
+<M n="0" v="2e+06"/><M n="1" v="2.99155e+06"/><M n="2" v="39961"/>
 </S>
-<S i="18" s="55" l="326">
-<M n="0" v="2e+06"/><M n="1" v="9.89908e+06"/><M n="2" v="183659"/>
-</S>
-</L>
-<L i="19" s="58" l="335" f="3">
-<S i="20" s="59" l="335">
-<M n="0" v="2e+06"/><M n="1" v="9.89553e+06"/><M n="2" v="23937"/>
-</S>
-<S i="21" s="60" l="336">
-<M n="0" v="1e+07"/><M n="1" v="5.21047e+07"/><M n="2" v="215568"/>
+<S i="14" s="94" l="316">
+<M n="0" v="1.4e+07"/><M n="1" v="2.45979e+07"/><M n="2" v="87819"/>
 </S>
 </L>
-<L i="22" s="63" l="345" f="3">
-<S i="23" s="64" l="345">
-<M n="2" v="23922"/>
+<L i="15" s="97" l="325" f="3">
+<S i="16" s="98" l="325">
+<M n="0" v="4e+06"/><M n="1" v="5.9179e+06"/><M n="2" v="7976"/>
 </S>
-<S i="24" s="65" l="346">
-<M n="0" v="6e+06"/><M n="1" v="2.7642e+07"/><M n="2" v="215646"/>
+<S i="17" s="99" l="326">
+<M n="0" v="1.2e+07"/><M n="1" v="1.78078e+07"/><M n="2" v="103830"/>
+</S>
+</L>
+<L i="18" s="102" l="335" f="3">
+<S i="19" s="103" l="335">
+<M n="0" v="4e+06"/><M n="1" v="5.8733e+06"/><M n="2" v="15950"/>
+</S>
+<S i="20" s="104" l="336">
+<M n="0" v="2.4e+07"/><M n="1" v="3.52432e+07"/><M n="2" v="167615"/>
+</S>
+</L>
+<L i="21" s="107" l="345" f="3">
+<S i="22" s="108" l="345">
+<M n="0" v="2e+06"/><M n="1" v="2.98987e+06"/><M n="2" v="39913"/>
+</S>
+<S i="23" s="109" l="346">
+<M n="0" v="2.2e+07"/><M n="1" v="3.31055e+07"/><M n="2" v="127795"/>
 </S>
 </L>
 </L>
-<C i="25" s="81" l="376">
-<PF i="26" s="105" l="434" lm="2" f="3" n="105">
-<L i="27" s="121" l="463" f="3">
-<S i="28" s="123" l="464">
-<M n="2" v="31943"/>
+<C i="24" s="134" l="376">
+<PF i="25" s="157" l="434" lm="2" f="3" n="157">
+<L i="26" s="165" l="463" f="3">
+<S i="27" s="168" l="465">
+<M n="2" v="7818"/>
 </S>
-<S i="29" s="124" l="465">
-<M n="2" v="7974"/>
-</S>
-<S i="30" s="125" l="466">
-<M n="2" v="7771"/>
+<S i="28" s="169" l="466">
+<M n="2" v="23934"/>
 </S>
 </L>
 </PF>

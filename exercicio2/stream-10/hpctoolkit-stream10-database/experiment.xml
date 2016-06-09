@@ -250,89 +250,14 @@
   <MetricDBTable>
   </MetricDBTable>
   <LoadModuleTable>
-    <LoadModule i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-10/stream10"/>
-    <LoadModule i="201" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
   </LoadModuleTable>
   <FileTable>
-    <File i="3" n="./src/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c"/>
-    <File i="202" n="&lt;unknown file&gt;"/>
   </FileTable>
   <ProcedureTable>
-    <Procedure i="4" n="main"/>
-    <Procedure i="105" n="checkSTREAMresults"/>
-    <Procedure i="203" n="&lt;program root&gt;" f="1"/>
   </ProcedureTable>
   <Info/>
 </SecHeader>
 <SecCallPathProfileData>
-<PF i="2" s="203" l="0" lm="201" f="202" n="203">
-<C i="3" s="204" l="0">
-<PF i="4" s="4" l="209" lm="2" f="3" n="4">
-<L i="5" s="20" l="269" f="3">
-<S i="6" s="22" l="270">
-<M n="2" v="23610"/>
-</S>
-<S i="7" s="23" l="271">
-<M n="2" v="7978"/>
-</S>
-<S i="8" s="24" l="272">
-<M n="2" v="14587"/>
-</S>
-</L>
-<L i="9" s="31" l="288" f="3">
-<S i="10" s="32" l="288">
-<M n="2" v="7926"/>
-</S>
-<S i="11" s="33" l="289">
-<M n="2" v="15960"/>
-</S>
-</L>
-<L i="12" s="45" l="308" f="3">
-<L i="13" s="48" l="315" f="3">
-<S i="14" s="49" l="315">
-<M n="0" v="2e+06"/><M n="1" v="9.87881e+06"/><M n="2" v="151766"/>
-</S>
-<S i="15" s="50" l="316">
-<M n="0" v="2e+06"/><M n="1" v="9.44619e+06"/><M n="2" v="71842"/>
-</S>
-</L>
-<L i="16" s="53" l="325" f="3">
-<S i="17" s="54" l="325">
-<M n="2" v="31953"/>
-</S>
-<S i="18" s="55" l="326">
-<M n="0" v="4e+06"/><M n="1" v="1.97728e+07"/><M n="2" v="183671"/>
-</S>
-</L>
-<L i="19" s="58" l="335" f="3">
-<S i="20" s="59" l="335">
-<M n="2" v="47860"/>
-</S>
-<S i="21" s="60" l="336">
-<M n="0" v="1e+07"/><M n="1" v="5.49194e+07"/><M n="2" v="175782"/>
-</S>
-</L>
-<L i="22" s="63" l="345" f="3">
-<S i="23" s="64" l="345">
-<M n="0" v="2e+06"/><M n="1" v="1.03928e+07"/><M n="2" v="23951"/>
-</S>
-<S i="24" s="65" l="346">
-<M n="0" v="4e+06"/><M n="1" v="2.07273e+07"/><M n="2" v="239605"/>
-</S>
-</L>
-</L>
-<C i="25" s="81" l="376">
-<PF i="26" s="105" l="434" lm="2" f="3" n="105">
-<L i="27" s="121" l="463" f="3">
-<S i="28" s="123" l="464">
-<M n="2" v="39662"/>
-</S>
-</L>
-</PF>
-</C>
-</PF>
-</C>
-</PF>
 </SecCallPathProfileData>
 </SecCallPathProfile>
 </HPCToolkitExperiment>

@@ -7,7 +7,7 @@ for N in 10 100 1000 10000 100000 1000000 10000000 20000000 40000000 60000000 80
 do
     mkdir stream-$N
     cd stream-$N
-	  gcc -g -o -dstream_array_size=$N ../../stream.c -o stream$N
+	  gcc -g -O -DSTREAM_ARRAY_SIZE=$N ../../stream.c -o stream$N
     cd ../
 done
 

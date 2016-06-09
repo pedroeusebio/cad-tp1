@@ -251,84 +251,113 @@
   </MetricDBTable>
   <LoadModuleTable>
     <LoadModule i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio2/stream-120000000/stream120000000"/>
-    <LoadModule i="201" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
+    <LoadModule i="267" n="&lt;unknown load module&gt;"/>
+    <LoadModule i="271" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
+    <LoadModule i="277" n="/lib/x86_64-linux-gnu/libc-2.19.so"/>
   </LoadModuleTable>
   <FileTable>
     <File i="3" n="./src/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/stream.c"/>
-    <File i="202" n="&lt;unknown file&gt;"/>
+    <File i="268" n="&lt;unknown file&gt;"/>
+    <File i="272" n="&lt;unknown file&gt;"/>
+    <File i="278" n="&lt;unknown file&gt;"/>
   </FileTable>
   <ProcedureTable>
     <Procedure i="4" n="main"/>
-    <Procedure i="105" n="checkSTREAMresults"/>
-    <Procedure i="203" n="&lt;program root&gt;" f="1"/>
+    <Procedure i="157" n="checkSTREAMresults"/>
+    <Procedure i="269" n="&lt;partial call paths&gt;" f="1"/>
+    <Procedure i="273" n="monitor_signal_handler"/>
+    <Procedure i="275" n="&lt;program root&gt;" f="1"/>
+    <Procedure i="279" n="&lt;unknown procedure&gt;"/>
   </ProcedureTable>
   <Info/>
 </SecHeader>
 <SecCallPathProfileData>
-<PF i="2" s="203" l="0" lm="201" f="202" n="203">
-<C i="3" s="204" l="0">
-<PF i="4" s="4" l="209" lm="2" f="3" n="4">
-<L i="5" s="20" l="269" f="3">
-<S i="6" s="23" l="271">
-<M n="2" v="15558"/>
+<PF i="2" s="269" l="0" lm="267" f="268" n="269">
+<C i="3" s="270" l="0">
+<PF i="4" s="279" l="0" lm="277" f="278" n="279">
+<C i="5" s="280" l="0">
+<PF i="6" s="273" l="0" lm="271" f="272" n="273">
+<S i="7" s="274" l="0">
+<M n="2" v="7975"/>
 </S>
-<S i="7" s="24" l="272">
-<M n="2" v="21509"/>
+</PF>
+</C>
+</PF>
+</C>
+</PF>
+<PF i="8" s="275" l="0" lm="271" f="272" n="275">
+<C i="9" s="276" l="0">
+<PF i="10" s="4" l="209" lm="2" f="3" n="4">
+<L i="11" s="39" l="269" f="3">
+<S i="12" s="40" l="269">
+<M n="0" v="4e+06"/><M n="1" v="2.19881e+07"/><M n="2" v="63365"/>
 </S>
-</L>
-<L i="8" s="31" l="288" f="3">
-<S i="9" s="32" l="288">
-<M n="2" v="7970"/>
+<S i="13" s="41" l="270">
+<M n="2" v="94694"/>
 </S>
-<S i="10" s="33" l="289">
-<M n="2" v="15972"/>
+<S i="14" s="42" l="271">
+<M n="0" v="4e+06"/><M n="1" v="2.18989e+07"/><M n="2" v="191478"/>
 </S>
-</L>
-<L i="11" s="45" l="308" f="3">
-<L i="12" s="48" l="315" f="3">
-<S i="13" s="49" l="315">
-<M n="0" v="2e+06"/><M n="1" v="9.42147e+06"/><M n="2" v="47907"/>
-</S>
-<S i="14" s="50" l="316">
-<M n="0" v="2e+06"/><M n="1" v="8.94381e+06"/><M n="2" v="167688"/>
-</S>
-</L>
-<L i="15" s="53" l="325" f="3">
-<S i="16" s="54" l="325">
-<M n="2" v="39963"/>
-</S>
-<S i="17" s="55" l="326">
-<M n="0" v="4e+06"/><M n="1" v="1.86854e+07"/><M n="2" v="191650"/>
+<S i="15" s="43" l="272">
+<M n="2" v="87950"/>
 </S>
 </L>
-<L i="18" s="58" l="335" f="3">
-<S i="19" s="59" l="335">
-<M n="2" v="23981"/>
+<L i="16" s="56" l="288" f="3">
+<S i="17" s="57" l="288">
+<M n="0" v="2e+06"/><M n="1" v="3.62947e+06"/><M n="2" v="15936"/>
 </S>
-<S i="20" s="60" l="336">
-<M n="0" v="8e+06"/><M n="1" v="4.23517e+07"/><M n="2" v="207603"/>
-</S>
-</L>
-<L i="21" s="63" l="345" f="3">
-<S i="22" s="64" l="345">
-<M n="0" v="4e+06"/><M n="1" v="1.93404e+07"/><M n="2" v="39928"/>
-</S>
-<S i="23" s="65" l="346">
-<M n="0" v="6e+06"/><M n="1" v="2.82546e+07"/><M n="2" v="215586"/>
+<S i="18" s="58" l="289">
+<M n="0" v="6e+06"/><M n="1" v="1.26518e+07"/><M n="2" v="87721"/>
 </S>
 </L>
+<L i="19" s="89" l="308" f="3">
+<L i="20" s="92" l="315" f="3">
+<S i="21" s="93" l="315">
+<M n="0" v="8.8e+07"/><M n="1" v="1.20021e+08"/><M n="2" v="359301"/>
+</S>
+<S i="22" s="94" l="316">
+<M n="0" v="1.32e+08"/><M n="1" v="1.80554e+08"/><M n="2" v="1.11805e+06"/>
+</S>
 </L>
-<C i="24" s="81" l="376">
-<PF i="25" s="105" l="434" lm="2" f="3" n="105">
-<L i="26" s="121" l="463" f="3">
-<S i="27" s="123" l="464">
-<M n="2" v="15982"/>
+<L i="23" s="97" l="325" f="3">
+<S i="24" s="98" l="325">
+<M n="0" v="2.2e+07"/><M n="1" v="3.09396e+07"/><M n="2" v="159679"/>
 </S>
-<S i="28" s="124" l="465">
-<M n="2" v="7966"/>
+<S i="25" s="99" l="326">
+<M n="0" v="1.78e+08"/><M n="1" v="2.50973e+08"/><M n="2" v="1.3098e+06"/>
 </S>
-<S i="29" s="125" l="466">
-<M n="2" v="23725"/>
+</L>
+<L i="26" s="102" l="335" f="3">
+<S i="27" s="103" l="335">
+<M n="0" v="3.4e+07"/><M n="1" v="4.80454e+07"/><M n="2" v="175730"/>
+</S>
+<S i="28" s="104" l="336">
+<M n="0" v="2.92e+08"/><M n="1" v="4.12233e+08"/><M n="2" v="1.84483e+06"/>
+</S>
+</L>
+<L i="29" s="107" l="345" f="3">
+<S i="30" s="108" l="345">
+<M n="0" v="5.8e+07"/><M n="1" v="8.55167e+07"/><M n="2" v="335186"/>
+</S>
+<S i="31" s="109" l="346">
+<M n="0" v="2.56e+08"/><M n="1" v="3.77343e+08"/><M n="2" v="1.71699e+06"/>
+</S>
+</L>
+</L>
+<C i="32" s="134" l="376">
+<PF i="33" s="157" l="434" lm="2" f="3" n="157">
+<L i="34" s="165" l="463" f="3">
+<S i="35" s="166" l="463">
+<M n="0" v="4e+06"/><M n="1" v="1.81735e+07"/><M n="2" v="15976"/>
+</S>
+<S i="36" s="167" l="464">
+<M n="0" v="6e+06"/><M n="1" v="2.5738e+07"/><M n="2" v="119633"/>
+</S>
+<S i="37" s="168" l="465">
+<M n="0" v="2e+06"/><M n="1" v="9.18355e+06"/><M n="2" v="87858"/>
+</S>
+<S i="38" s="169" l="466">
+<M n="2" v="111805"/>
 </S>
 </L>
 </PF>

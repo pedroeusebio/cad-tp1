@@ -1,0 +1,19 @@
+"Scope","CPUTIME (usec).[0,0] (I)","CPUTIME (usec).[0,0] (E)"
+"Experiment Aggregate Metrics",7.98e+08 100 %,7.98e+08 100 %
+"<program root>",7.98e+08 100 %,
+"main",7.98e+08 100 %,
+"loop at : 0",7.98e+08 100 %,
+"run_wave_propagation(float***, float***, float***, float*, Parameters*)",7.96e+08 99.7%,
+"loop at : 0",7.96e+08 99.7%,
+"iso_3dfd_it(float***, float***, float***, float*, int, int, int)",3.98e+08 49.9%,3.95e+08 49.5%
+"iso_3dfd_it(float***, float***, float***, float*, int, int, int)",3.96e+08 49.6%,3.93e+08 49.2%
+"write_plane_XY(float***, Parameters*, int, char const*)",1.40e+06  0.2%,1.04e+05  0.0%
+"int const& std::min<int>(int const&, int const&)",4.15e+05  0.1%,4.15e+05  0.1%
+"int const& std::min<int>(int const&, int const&)",3.52e+05  0.0%,3.52e+05  0.0%
+"initialize(float***, float***, float***, Parameters*)",1.84e+06  0.2%,1.84e+06  0.2%
+"write_plane_XY(float***, Parameters*, int, char const*)",9.29e+04  0.0%,
+"Allocate3DMatrix(int, int, int)",2.48e+04  0.0%,
+"Allocate3DMatrix(int, int, int)",2.39e+04  0.0%,
+"Allocate3DMatrix(int, int, int)",1.60e+04  0.0%,
+"Deallocate3DMatrix(float***, Parameters*)",8.00e+03  0.0%,
+"Deallocate3DMatrix(float***, Parameters*)",7.45e+03  0.0%,

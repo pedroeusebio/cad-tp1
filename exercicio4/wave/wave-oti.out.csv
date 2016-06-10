@@ -1,0 +1,18 @@
+"Scope","CPUTIME (usec).[0,0] (I)","CPUTIME (usec).[0,0] (E)"
+"Experiment Aggregate Metrics",1.37e+09 100 %,1.37e+09 100 %
+"<program root>",1.37e+09 100 %,
+"main",1.37e+09 100 %,
+"loop at : 0",1.37e+09 100 %,
+"run_wave_propagation(float***, float***, float***, float*, Parameters*)",1.37e+09 99.9%,
+"loop at : 0",1.37e+09 99.9%,
+"iso_3dfd_it(float***, float***, float***, float*, int, int, int)",6.88e+08 50.2%,6.88e+08 50.2%
+"iso_3dfd_it(float***, float***, float***, float*, int, int, int)",6.79e+08 49.6%,6.79e+08 49.6%
+"write_plane_XY(float***, Parameters*, int, char const*)",1.40e+06  0.1%,7.99e+04  0.0%
+"<unknown procedure>",8.00e+03  0.0%,8.00e+03  0.0%
+"initialize(float***, float***, float***, Parameters*)",1.72e+06  0.1%,1.72e+06  0.1%
+"write_plane_XY(float***, Parameters*, int, char const*)",9.27e+04  0.0%,7.99e+03  0.0%
+"Allocate3DMatrix(int, int, int)",1.60e+04  0.0%,
+"Allocate3DMatrix(int, int, int)",1.60e+04  0.0%,
+"Allocate3DMatrix(int, int, int)",1.40e+04  0.0%,
+"Deallocate3DMatrix(float***, Parameters*)",7.96e+03  0.0%,
+"Deallocate3DMatrix(float***, Parameters*)",7.78e+03  0.0%,

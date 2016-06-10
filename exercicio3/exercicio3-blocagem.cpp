@@ -18,7 +18,7 @@ void fillArray(int** element, long n, int number) {
 }
 
 
-void multiplyArray(int** result, int** vectorX, int** vectorY, long n, long nb){
+void multiplyArray(float** result, float** vectorX, float** vectorY, long n, long nb){
   for(int jj = 0; jj < n ; jj += nb){
     for(int ii = 0; ii < n ; ii += nb){
       for(int kk = 0; kk < n; kk += nb){
@@ -44,13 +44,13 @@ int main( int argc, const char* argv[]) {
 
   long n = atol(argv[1]);
   long nb = atol(argv[2]);
-  int **vectorX = new int*[n];
-  int **vectorY = new int*[n];
-  int **vectorZ = new int*[n];
+  float **vectorX = new float*[n];
+  float **vectorY = new float*[n];
+  float **vectorZ = new float*[n];
   for(int i = 0; i < n; i++) {
-    vectorX[i] = new int[n];
-    vectorY[i] = new int[n];
-    vectorZ[i] = new int[n];
+    vectorX[i] = new float[n];
+    vectorY[i] = new float[n];
+    vectorZ[i] = new float[n];
   }
   fillArray(vectorX, n, 2);
   fillArray(vectorY, n, 1);

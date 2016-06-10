@@ -18,14 +18,14 @@ void fillArray(int** element, long n, int number) {
 }
 
 
-void multiplyArray(int** result, int** vectorX, int** vectorY, long n, long nb){
-  for(int jj = 0; jj < n ; jj += nb){
-    for(int ii = 0; ii < n ; ii += nb){
+void multiplyArray(int** result, int** vectorX, int** vectorY, int n, int nb){
+  for(int ii = 0; ii < n ; ii += nb){
+    for(int jj = 0; jj < n ; jj += nb){
       for(int kk = 0; kk < n; kk += nb){
-        for(int j = jj; j < std::min(n, jj + nb); j++){
-          for(int i = ii; i < std::min(n, ii + nb); i++){
+        for(int i = ii; i < std::min(n, ii + nb); i++){
+          for(int j = jj; j < std::min(n, jj + nb); j++){
             for(int k = kk; k < std::min(n, kk +nb); k++) {
-              result[i][j] = result[i][j] + vectorX[i][k] * vectorY[k][j];
+              result[i][j] = result[i][j] + vectorX[j][k] * vectorY[k][i];
             }
           }
         }
@@ -42,8 +42,8 @@ int main( int argc, const char* argv[]) {
     return 0;
   }
 
-  long n = atol(argv[1]);
-  long nb = atol(argv[2]);
+  int n = atol(argv[1]);
+  int nb = atol(argv[2]);
   int **vectorX = new int*[n];
   int **vectorY = new int*[n];
   int **vectorZ = new int*[n];

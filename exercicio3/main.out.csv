@@ -1,0 +1,10 @@
+"Scope","CPUTIME (usec).[0,0] (I)","CPUTIME (usec).[0,0] (E)"
+"Experiment Aggregate Metrics",6.47e+06 100 %,6.47e+06 100 %
+"<program root>",6.47e+06 100 %,
+"main",6.47e+06 100 %,
+"loop at : 0",6.47e+06 100 %,
+"multiplyArray(int**, int**, int**, long)",6.47e+06 100 %,6.47e+06 100 %
+"loop at : 0",6.47e+06 100 %,
+"loop at : 0",6.47e+06 100 %,
+"loop at : 0",6.47e+06 100 %,6.47e+06 100 %
+"<unknown file>: 0",6.47e+06 100 %,6.47e+06 100 %

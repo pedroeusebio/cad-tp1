@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE HPCToolkitStructure [
+<!-- ******************************************************************** -->
+<!-- HPCToolkit Structure DTD                                             -->
+<!-- Version 4.6                                                          -->
+<!-- ******************************************************************** -->
+
+<!ELEMENT HPCToolkitStructure (LM)*>
+<!ATTLIST HPCToolkitStructure
+	version CDATA #REQUIRED
+	i       CDATA #REQUIRED
+	n       CDATA #IMPLIED>
+  <!-- Load module: -->
+  <!--   (i)d: unique identifier for cross referencing -->
+  <!--   (n)ame -->
+  <!--   (l)ine range: "beg-end" (inclusive range) -->
+  <!--   (v)ma-range-set: "{[beg-end), [beg-end)...}" -->
+  <!ELEMENT LM (F|P)*>
+  <!ATTLIST LM
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- File: -->
+  <!ELEMENT F (P|L|S)*>
+  <!ATTLIST F
+	i CDATA #REQUIRED
+	n CDATA #REQUIRED>
+  <!-- Procedure: ln=link name (if different than name) -->
+  <!ELEMENT P (P|A|L|S|C)*>
+  <!ATTLIST P
+	i  CDATA #REQUIRED
+	n  CDATA #REQUIRED
+	ln CDATA #IMPLIED
+	l  CDATA #IMPLIED
+	v  CDATA #IMPLIED>
+  <!-- Alien: (f)ilename -->
+  <!ELEMENT A (A|L|S|C)*>
+  <!ATTLIST A
+	i CDATA #REQUIRED
+	f CDATA #IMPLIED
+	n CDATA #IMPLIED
+	ln CDATA #IMPLIED
+	l CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Loop -->
+  <!ELEMENT L (A|L|S|C)*>
+  <!ATTLIST L
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	f CDATA #IMPLIED
+	v CDATA #IMPLIED>
+  <!-- Statement -->
+  <!ELEMENT S (S)*>
+  <!ATTLIST S
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+  <!-- Callsite (a special Statement) -->
+  <!ELEMENT C EMPTY>
+  <!ATTLIST C
+	i CDATA #REQUIRED
+	l CDATA #REQUIRED
+	v CDATA #IMPLIED>
+]>
+<HPCToolkitStructure i="0" version="4.6" n="">
+<LM i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio3/main.out" v="{}">
+  <F i="23" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio3/exercicio3.cpp">
+    <P i="25" n="_GLOBAL__sub_I__Z9fillArrayPPili" l="0" v="{[0x400d73-0x400d90)}">
+      <S i="402" l="0" v="{[0x400d73-0x400d88)}"/>
+    </P>
+    <P i="24" n="__static_initialization_and_destruction_0(int, int)" ln="_Z41__static_initialization_and_destruction_0ii" l="0" v="{[0x400d36-0x400d73)}">
+      <S i="385" l="0" v="{[0x400d36-0x400d73)}"/>
+    </P>
+  </F>
+  <F i="3" n="&lt;unknown file&gt;">
+    <P i="13" n="_ZNSolsEPFRSoS_E@plt" l="0" v="{[0x400820-0x400830)}">
+      <S i="44" l="0" v="{[0x400820-0x400826)}"/>
+    </P>
+    <P i="7" n="_ZNSt8ios_base4InitC1Ev@plt" l="0" v="{[0x4007b0-0x4007c0)}">
+      <S i="38" l="0" v="{[0x4007b0-0x4007b6)}"/>
+    </P>
+    <P i="10" n="_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt" l="0" v="{[0x4007f0-0x400800)}">
+      <S i="41" l="0" v="{[0x4007f0-0x4007f6)}"/>
+    </P>
+    <P i="12" n="_ZdaPv@plt" l="0" v="{[0x400810-0x400820)}">
+      <S i="43" l="0" v="{[0x400810-0x400816)}"/>
+    </P>
+    <P i="6" n="_Znam@plt" l="0" v="{[0x4007a0-0x4007b0)}">
+      <S i="37" l="0" v="{[0x4007a0-0x4007a6)}"/>
+    </P>
+    <P i="9" n="__cxa_atexit@plt" l="0" v="{[0x4007d0-0x4007e0)}">
+      <S i="40" l="0" v="{[0x4007d0-0x4007d6)}"/>
+    </P>
+    <P i="5" n="__gmon_start__@plt" l="0" v="{[0x400790-0x4007a0)}">
+      <S i="36" l="0" v="{[0x400790-0x400796)}"/>
+    </P>
+    <P i="27" n="__libc_csu_fini" l="0" v="{[0x400e00-0x400e02)}">
+      <S i="444" l="0" v="{[0x400e00-0x400e02)}"/>
+    </P>
+    <P i="26" n="__libc_csu_init" l="0" v="{[0x400d90-0x400e00)}">
+      <L i="436" l="0" v="{[0x400dd0-0x400dd1)}" f="">
+        <S i="437" l="0" v="{[0x400d90-0x400df5)}"/>
+      </L>
+    </P>
+    <P i="8" n="__libc_start_main@plt" l="0" v="{[0x4007c0-0x4007d0)}">
+      <S i="39" l="0" v="{[0x4007c0-0x4007c6)}"/>
+    </P>
+    <P i="28" n="_fini" l="0" v="{[0x400e04-0x400e0d)}">
+      <S i="445" l="0" v="{[0x400e04-0x400e0d)}"/>
+    </P>
+    <P i="4" n="_init" l="0" v="{[0x400760-0x40077a)}">
+      <S i="29" l="0" v="{[0x400760-0x40077a)}"/>
+    </P>
+    <P i="14" n="_start" l="0" v="{[0x400840-0x400870)}">
+      <S i="45" l="0" v="{[0x400840-0x40086a)}"/>
+    </P>
+    <P i="11" n="atol@plt" l="0" v="{[0x400800-0x400810)}">
+      <S i="42" l="0" v="{[0x400800-0x400806)}"/>
+    </P>
+    <P i="20" n="fillArray(int**, long, int)" ln="_Z9fillArrayPPili" l="0" v="{[0x40092d-0x400997)}">
+      <L i="119" l="0" v="{[0x40098a-0x40098b)}" f="">
+        <L i="127" l="0" v="{[0x40097b-0x40097c)}" f="">
+          <S i="128" l="0" v="{[0x40092d-0x400997)}"/>
+        </L>
+      </L>
+    </P>
+    <P i="22" n="main" l="0" v="{[0x400ad4-0x400d36)}">
+      <L i="334" l="0" v="{[0x400c9a-0x400c9b)}" f="">
+        <S i="335" l="0" v="{[0x400ad4-0x400d36)}"/>
+      </L>
+    </P>
+    <P i="21" n="multiplyArray(int**, int**, int**, long)" ln="_Z13multiplyArrayPPiS0_S0_l" l="0" v="{[0x400997-0x400ad4)}">
+      <L i="155" l="0" v="{[0x400ac3-0x400ac4)}" f="">
+        <L i="163" l="0" v="{[0x400ab0-0x400ab1)}" f="">
+          <L i="182" l="0" v="{[0x400a9d-0x400a9e)}" f="">
+            <S i="183" l="0" v="{[0x400997-0x400ad4)}"/>
+          </L>
+        </L>
+      </L>
+    </P>
+  </F>
+  <F i="15" n="crtstuff.c">
+    <P i="18" n="__do_global_dtors_aux" l="0" v="{[0x4008e0-0x400900)}">
+      <S i="90" l="0" v="{[0x4008e0-0x4008fc)}"/>
+    </P>
+    <P i="16" n="deregister_tm_clones" l="0" v="{[0x400870-0x4008a0)}">
+      <S i="57" l="0" v="{[0x400870-0x400899)}"/>
+    </P>
+    <P i="19" n="frame_dummy" l="0" v="{[0x400900-0x40092d)}">
+      <S i="98" l="0" v="{[0x400900-0x400925) [0x400928-0x40092d)}"/>
+    </P>
+    <P i="17" n="register_tm_clones" l="0" v="{[0x4008a0-0x4008e0)}">
+      <S i="71" l="0" v="{[0x4008a0-0x4008d9)}"/>
+    </P>
+  </F>
+</LM>
+</HPCToolkitStructure>

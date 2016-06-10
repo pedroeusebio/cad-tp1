@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<!DOCTYPE HPCToolkitExperiment [
+<!-- ******************************************************************** -->
+<!-- HPCToolkit Experiment DTD						  -->
+<!-- Version 2.0							  -->
+<!-- ******************************************************************** -->
+<!ELEMENT HPCToolkitExperiment (Header, (SecCallPathProfile|SecFlatProfile)*)>
+<!ATTLIST HPCToolkitExperiment
+	  version CDATA #REQUIRED>
+
+  <!-- ****************************************************************** -->
+
+  <!-- Info/NV: flexible name-value pairs: (n)ame; (t)ype; (v)alue -->
+  <!ELEMENT Info (NV*)>
+  <!ATTLIST Info
+	    n CDATA #IMPLIED>
+  <!ELEMENT NV EMPTY>
+  <!ATTLIST NV
+	    n CDATA #REQUIRED
+	    t CDATA #IMPLIED
+	    v CDATA #REQUIRED>
+
+  <!-- ****************************************************************** -->
+  <!-- Header								  -->
+  <!-- ****************************************************************** -->
+  <!ELEMENT Header (Info*)>
+  <!ATTLIST Header
+	    n CDATA #REQUIRED>
+
+  <!-- ****************************************************************** -->
+  <!-- Section Header							  -->
+  <!-- ****************************************************************** -->
+  <!ELEMENT SecHeader (MetricTable?, MetricDBTable?, TraceDBTable?, LoadModuleTable?, FileTable?, ProcedureTable?, Info*)>
+
+    <!-- MetricTable: -->
+    <!ELEMENT MetricTable (Metric)*>
+
+    <!-- Metric: (i)d; (n)ame -->
+    <!--   (v)alue-type: transient type of values -->
+    <!--   (t)ype: persistent type of metric -->
+    <!--   fmt: format; show; -->
+    <!ELEMENT Metric (MetricFormula*, Info?)>
+    <!ATTLIST Metric
+	      i            CDATA #REQUIRED
+	      n            CDATA #REQUIRED
+	      v            (raw|final|derived-incr|derived) "raw"
+	      t            (inclusive|exclusive|nil) "nil"
+	      partner      CDATA #IMPLIED
+	      fmt          CDATA #IMPLIED
+	      show         (1|0) "1"
+	      show-percent (1|0) "1">
+
+    <!-- MetricFormula represents derived metrics: (t)ype; (frm): formula -->
+    <!ELEMENT MetricFormula (Info?)>
+    <!ATTLIST MetricFormula
+	      t   (combine|finalize) "finalize"
+	      i   CDATA #IMPLIED
+	      frm CDATA #REQUIRED>
+
+    <!-- Metric data, used in sections: (n)ame [from Metric]; (v)alue -->
+    <!ELEMENT M EMPTY>
+    <!ATTLIST M
+	      n CDATA #REQUIRED
+	      v CDATA #REQUIRED>
+
+    <!-- MetricDBTable: -->
+    <!ELEMENT MetricDBTable (MetricDB)*>
+
+    <!-- MetricDB: (i)d; (n)ame -->
+    <!--   (t)ype: persistent type of metric -->
+    <!--   db-glob:        file glob describing files in metric db -->
+    <!--   db-id:          id within metric db -->
+    <!--   db-num-metrics: number of metrics in db -->
+    <!--   db-header-sz:   size (in bytes) of a db file header -->
+    <!ELEMENT MetricDB EMPTY>
+    <!ATTLIST MetricDB
+	      i              CDATA #REQUIRED
+	      n              CDATA #REQUIRED
+	      t              (inclusive|exclusive|nil) "nil"
+	      partner        CDATA #IMPLIED
+	      db-glob        CDATA #IMPLIED
+	      db-id          CDATA #IMPLIED
+	      db-num-metrics CDATA #IMPLIED
+	      db-header-sz   CDATA #IMPLIED>
+
+    <!-- TraceDBTable: -->
+    <!ELEMENT TraceDBTable (TraceDB)>
+
+    <!-- TraceDB: (i)d -->
+    <!--   db-min-time: min beginning time stamp (global) -->
+    <!--   db-max-time: max ending time stamp (global) -->
+    <!ELEMENT TraceDB EMPTY>
+    <!ATTLIST TraceDB
+	      i            CDATA #REQUIRED
+	      db-glob      CDATA #IMPLIED
+	      db-min-time  CDATA #IMPLIED
+	      db-max-time  CDATA #IMPLIED
+	      db-header-sz CDATA #IMPLIED>
+
+    <!-- LoadModuleTable assigns a short name to a load module -->
+    <!ELEMENT LoadModuleTable (LoadModule)*>
+
+    <!ELEMENT LoadModule (Info?)>
+    <!ATTLIST LoadModule
+	      i CDATA #REQUIRED
+	      n CDATA #REQUIRED>
+
+    <!-- FileTable assigns a short name to a file -->
+    <!ELEMENT FileTable (File)*>
+
+    <!ELEMENT File (Info?)>
+    <!ATTLIST File
+	      i CDATA #REQUIRED
+	      n CDATA #REQUIRED>
+
+    <!-- ProcedureTable assigns a short name to a procedure -->
+    <!ELEMENT ProcedureTable (Procedure)*>
+
+    <!ELEMENT Procedure (Info?)>
+    <!ATTLIST Procedure
+	      i CDATA #REQUIRED
+	      n CDATA #REQUIRED>
+
+  <!-- ****************************************************************** -->
+  <!-- Section: Call path profile					  -->
+  <!-- ****************************************************************** -->
+  <!ELEMENT SecCallPathProfile (SecHeader, SecCallPathProfileData)>
+  <!ATTLIST SecCallPathProfile
+	    i CDATA #REQUIRED
+	    n CDATA #REQUIRED>
+
+    <!ELEMENT SecCallPathProfileData (PF|M)*>
+      <!-- Procedure frame -->
+      <!--   (i)d: unique identifier for cross referencing -->
+      <!--   (s)tatic scope id -->
+      <!--   (n)ame: a string or an id in ProcedureTable -->
+      <!--   (lm) load module: a string or an id in LoadModuleTable -->
+      <!--   (f)ile name: a string or an id in LoadModuleTable -->
+      <!--   (l)ine range: "beg-end" (inclusive range) -->
+      <!--   (a)lien: whether frame is alien to enclosing P -->
+      <!--   (str)uct: hpcstruct node id -->
+      <!--   (v)ma-range-set: "{[beg-end), [beg-end)...}" -->
+      <!ELEMENT PF (PF|Pr|L|C|S|M)*>
+      <!ATTLIST PF
+		i  CDATA #IMPLIED
+		s  CDATA #IMPLIED
+		n  CDATA #REQUIRED
+		lm CDATA #IMPLIED
+		f  CDATA #IMPLIED
+		l  CDATA #IMPLIED
+		str  CDATA #IMPLIED
+		v  CDATA #IMPLIED>
+      <!-- Procedure (static): GOAL: replace with 'P' -->
+      <!ELEMENT Pr (Pr|L|C|S|M)*>
+      <!ATTLIST Pr
+                i  CDATA #IMPLIED
+		s  CDATA #IMPLIED
+                n  CDATA #REQUIRED
+		lm CDATA #IMPLIED
+		f  CDATA #IMPLIED
+                l  CDATA #IMPLIED
+		a  (1|0) "0"
+		str  CDATA #IMPLIED
+		v  CDATA #IMPLIED>
+      <!-- Callsite (a special StatementRange) -->
+      <!ELEMENT C (PF|M)*>
+      <!ATTLIST C
+		i CDATA #IMPLIED
+		s CDATA #IMPLIED
+		l CDATA #IMPLIED
+		str CDATA #IMPLIED
+		v CDATA #IMPLIED>
+
+  <!-- ****************************************************************** -->
+  <!-- Section: Flat profile						  -->
+  <!-- ****************************************************************** -->
+  <!ELEMENT SecFlatProfile (SecHeader, SecFlatProfileData)>
+  <!ATTLIST SecFlatProfile
+	    i CDATA #REQUIRED
+	    n CDATA #REQUIRED>
+
+    <!ELEMENT SecFlatProfileData (LM|M)*>
+      <!-- Load module: (i)d; (n)ame; (v)ma-range-set -->
+      <!ELEMENT LM (F|P|M)*>
+      <!ATTLIST LM
+                i CDATA #IMPLIED
+                n CDATA #REQUIRED
+		v CDATA #IMPLIED>
+      <!-- File -->
+      <!ELEMENT F (P|L|S|M)*>
+      <!ATTLIST F
+                i CDATA #IMPLIED
+                n CDATA #REQUIRED>
+      <!-- Procedure (Note 1) -->
+      <!ELEMENT P (P|A|L|S|C|M)*>
+      <!ATTLIST P
+                i CDATA #IMPLIED
+                n CDATA #REQUIRED
+                l CDATA #IMPLIED
+		str CDATA #IMPLIED
+		v CDATA #IMPLIED>
+      <!-- Alien (Note 1) -->
+      <!ELEMENT A (A|L|S|C|M)*>
+      <!ATTLIST A
+                i CDATA #IMPLIED
+                f CDATA #IMPLIED
+                n CDATA #IMPLIED
+                l CDATA #IMPLIED
+		str CDATA #IMPLIED
+		v CDATA #IMPLIED>
+      <!-- Loop (Note 1,2) -->
+      <!ELEMENT L (A|Pr|L|S|C|M)*>
+      <!ATTLIST L
+		i CDATA #IMPLIED
+		s CDATA #IMPLIED
+		l CDATA #IMPLIED
+	        f CDATA #IMPLIED
+		str CDATA #IMPLIED
+		v CDATA #IMPLIED>
+      <!-- Statement (Note 2) -->
+      <!--   (it): trace record identifier -->
+      <!ELEMENT S (S|M)*>
+      <!ATTLIST S
+		i  CDATA #IMPLIED
+		it CDATA #IMPLIED
+		s  CDATA #IMPLIED
+		l  CDATA #IMPLIED
+		str  CDATA #IMPLIED
+		v  CDATA #IMPLIED>
+      <!-- Note 1: Contained Cs may not contain PFs -->
+      <!-- Note 2: The 's' attribute is not used for flat profiles -->
+]>
+<HPCToolkitExperiment version="2.0">
+<Header n="main-blocagem.out">
+  <Info/>
+</Header>
+<SecCallPathProfile i="0" n="main-blocagem.out">
+<SecHeader>
+  <MetricTable>
+    <Metric i="4" n="CPUTIME (usec):Sum (I)" v="derived-incr" t="inclusive" partner="5" show="1" show-percent="1">
+      <MetricFormula t="combine" frm="sum($4, $4)"/>
+      <MetricFormula t="finalize" frm="$4"/>
+      <Info><NV n="units" v="events"/></Info>
+    </Metric>
+    <Metric i="5" n="CPUTIME (usec):Sum (E)" v="derived-incr" t="exclusive" partner="4" show="1" show-percent="1">
+      <MetricFormula t="combine" frm="sum($5, $5)"/>
+      <MetricFormula t="finalize" frm="$5"/>
+      <Info><NV n="units" v="events"/></Info>
+    </Metric>
+  </MetricTable>
+  <MetricDBTable>
+  </MetricDBTable>
+  <LoadModuleTable>
+    <LoadModule i="2" n="/home/pedroeusebio/my-work/computacao-de-alto-desempenho/tp1/exercicio3/main-blocagem.out"/>
+    <LoadModule i="68" n="/home/pedroeusebio/local/hpctoolkit/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0"/>
+  </LoadModuleTable>
+  <FileTable>
+    <File i="8" n="&lt;unknown file&gt;"/>
+    <File i="39" n=""/>
+    <File i="40" n=""/>
+    <File i="45" n=""/>
+    <File i="48" n=""/>
+    <File i="49" n=""/>
+    <File i="50" n=""/>
+    <File i="51" n=""/>
+    <File i="52" n=""/>
+    <File i="53" n=""/>
+    <File i="69" n="&lt;unknown file&gt;"/>
+  </FileTable>
+  <ProcedureTable>
+    <Procedure i="38" n="fillArray(int**, long, int)"/>
+    <Procedure i="42" n="long const&amp; std::min&lt;long&gt;(long const&amp;, long const&amp;)"/>
+    <Procedure i="44" n="main"/>
+    <Procedure i="47" n="multiplyArray(int**, int**, int**, long, long)"/>
+    <Procedure i="70" n="&lt;program root&gt;" f="1"/>
+  </ProcedureTable>
+  <Info/>
+</SecHeader>
+<SecCallPathProfileData>
+<M n="4" v="1.0098e+07"/>
+<PF i="2" s="70" l="0" lm="68" f="69" n="70">
+<M n="4" v="1.0098e+07"/>
+<C i="3" s="71" l="0">
+<M n="4" v="1.0098e+07"/>
+<PF i="4" s="44" l="0" lm="2" f="8" n="44">
+<M n="4" v="1.0098e+07"/>
+<L i="5" s="45" l="0" f="45">
+<M n="4" v="1.0098e+07"/>
+<C i="6" s="46" l="0">
+<M n="4" v="9045"/>
+<PF i="7" s="38" l="0" lm="2" f="8" n="38">
+<M n="4" v="9045"/><M n="5" v="9045"/>
+<L i="8" s="39" l="0" f="39">
+<M n="4" v="9045"/>
+<L i="9" s="40" l="0" f="40">
+<M n="4" v="9045"/><M n="5" v="9045"/>
+<S i="10" s="41" l="0">
+<M n="4" v="9045"/><M n="5" v="9045"/>
+</S>
+</L>
+</L>
+</PF>
+</C>
+<C i="11" s="46" l="0">
+<M n="4" v="1.0089e+07"/>
+<PF i="12" s="42" l="0" lm="2" f="8" n="42">
+<M n="4" v="263797"/><M n="5" v="263797"/>
+<S i="13" s="43" l="0">
+<M n="4" v="263797"/><M n="5" v="263797"/>
+</S>
+</PF>
+<PF i="14" s="47" l="0" lm="2" f="8" n="47">
+<M n="4" v="9.82517e+06"/><M n="5" v="8.01852e+06"/>
+<L i="15" s="48" l="0" f="48">
+<M n="4" v="9.82517e+06"/>
+<L i="16" s="49" l="0" f="49">
+<M n="4" v="9.82517e+06"/>
+<L i="17" s="50" l="0" f="50">
+<M n="4" v="9.82517e+06"/>
+<L i="18" s="51" l="0" f="51">
+<M n="4" v="9.82517e+06"/>
+<L i="19" s="52" l="0" f="52">
+<M n="4" v="9.82517e+06"/>
+<L i="20" s="53" l="0" f="53">
+<M n="4" v="9.82517e+06"/><M n="5" v="8.01852e+06"/>
+<C i="21" s="54" l="0">
+<M n="4" v="1.319e+06"/>
+<PF i="22" s="42" l="0" lm="2" f="8" n="42">
+<M n="4" v="1.319e+06"/><M n="5" v="1.319e+06"/>
+<S i="23" s="43" l="0">
+<M n="4" v="1.319e+06"/><M n="5" v="1.319e+06"/>
+</S>
+</PF>
+</C>
+<C i="24" s="54" l="0">
+<M n="4" v="367717"/>
+<PF i="25" s="42" l="0" lm="2" f="8" n="42">
+<M n="4" v="367717"/><M n="5" v="367717"/>
+<S i="26" s="43" l="0">
+<M n="4" v="367717"/><M n="5" v="367717"/>
+</S>
+</PF>
+</C>
+<C i="27" s="54" l="0">
+<M n="4" v="119940"/>
+<PF i="28" s="42" l="0" lm="2" f="8" n="42">
+<M n="4" v="119940"/><M n="5" v="119940"/>
+<S i="29" s="43" l="0">
+<M n="4" v="119940"/><M n="5" v="119940"/>
+</S>
+</PF>
+</C>
+<S i="30" s="54" l="0">
+<M n="4" v="8.01852e+06"/><M n="5" v="8.01852e+06"/>
+</S>
+</L>
+</L>
+</L>
+</L>
+</L>
+</L>
+</PF>
+</C>
+</L>
+</PF>
+</C>
+</PF>
+</SecCallPathProfileData>
+</SecCallPathProfile>
+</HPCToolkitExperiment>

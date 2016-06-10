@@ -1,0 +1,21 @@
+"Scope","CPUTIME (usec):Sum (I)","CPUTIME (usec):Sum (E)"
+"Experiment Aggregate Metrics",1.01e+07 100 %,1.01e+07 100 %
+"<program root>",1.01e+07 100 %,
+"main",1.01e+07 100 %,
+"loop at : 0",1.01e+07 100 %,
+"multiplyArray(int**, int**, int**, long, long)",9.83e+06 97.3%,8.02e+06 79.4%
+"loop at : 0",9.83e+06 97.3%,
+"loop at : 0",9.83e+06 97.3%,
+"loop at : 0",9.83e+06 97.3%,
+"loop at : 0",9.83e+06 97.3%,
+"loop at : 0",9.83e+06 97.3%,
+"loop at : 0",9.83e+06 97.3%,8.02e+06 79.4%
+"<unknown file>: 0",8.02e+06 79.4%,8.02e+06 79.4%
+"long const& std::min<long>(long const&, long const&)",1.32e+06 13.1%,1.32e+06 13.1%
+"<unknown file>: 0",1.32e+06 13.1%,1.32e+06 13.1%
+"long const& std::min<long>(long const&, long const&)",3.68e+05  3.6%,3.68e+05  3.6%
+"<unknown file>: 0",3.68e+05  3.6%,3.68e+05  3.6%
+"long const& std::min<long>(long const&, long const&)",1.20e+05  1.2%,1.20e+05  1.2%
+"<unknown file>: 0",1.20e+05  1.2%,1.20e+05  1.2%
+"long const& std::min<long>(long const&, long const&)",2.64e+05  2.6%,2.64e+05  2.6%
+"fillArray(int**, long, int)",9.04e+03  0.1%,9.04e+03  0.1%

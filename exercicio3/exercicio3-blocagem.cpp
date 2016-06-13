@@ -25,7 +25,7 @@ void multiplyArray(float** result, float** vectorX, float** vectorY, int n, int 
         for(int i = ii; i < std::min(n, ii + nb); i++){
           for(int j = jj; j < std::min(n, jj + nb); j++){
             for(int k = kk; k < std::min(n, kk +nb); k++) {
-              result[i][j] = result[i][j] + vectorX[j][k] * vectorY[k][i];
+              result[i][j] = result[i][j] + vectorX[i][k] * vectorY[k][j];
             }
           }
         }
@@ -44,6 +44,7 @@ int main( int argc, const char* argv[]) {
 
   int n = atol(argv[1]);
   int nb = atol(argv[2]);
+  cout << nb << "," << n << endl;
   float **vectorX = new float*[n];
   float **vectorY = new float*[n];
   float **vectorZ = new float*[n];
@@ -51,12 +52,19 @@ int main( int argc, const char* argv[]) {
     vectorX[i] = new float[n];
     vectorY[i] = new float[n];
     vectorZ[i] = new float[n];
+    for(int j = 0; j < n; j++) {
+      vectorX[i][j] = 2;
+      vectorY[i][j] = 1;
+      vectorZ[i][j] = 0;
+    }
   }
-  fillArray(vectorX, n, 2);
-  fillArray(vectorY, n, 1);
-  fillArray(vectorZ, n, 0);
 
   multiplyArray(vectorZ, vectorX, vectorY, n, nb);
+  for(int i = 0; i < n; i++){
+    delete [] vectorX[i];
+    delete [] vectorY[i];
+    delete [] vectorZ[i];
+  }
 
   delete [] vectorX;
   delete [] vectorY;
